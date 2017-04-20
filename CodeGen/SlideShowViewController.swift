@@ -9,11 +9,18 @@
 import UIKit
 
 class SlideShowViewController: UIViewController {
+
+  // MARK: IBOutlets
+
   @IBOutlet weak var previousButton: UIButton!
   @IBOutlet weak var nextButton: UIButton!
   @IBOutlet weak var imageView: UIImageView!
 
+  // MARK: Public properties
+
   var images: [UIImage] = []
+
+  // MARK: Private propertes
 
   private var currentIndex = 0 {
     willSet {
@@ -25,10 +32,14 @@ class SlideShowViewController: UIViewController {
     }
   }
 
+  // MARK: Setup
+
   override func viewDidLoad() {
     super.viewDidLoad()
     self.updateUI()
   }
+
+  // MARK: IBActions
 
   @IBAction func showPrevious() {
     self.currentIndex -= 1
@@ -42,6 +53,8 @@ class SlideShowViewController: UIViewController {
     self.presentingViewController?.dismiss(animated: true)
   }
 
+  // MARK: Private methods
+  
   private func updateUI() {
     self.imageView.image = images[self.currentIndex]
     self.previousButton.isEnabled = self.currentIndex > 0
