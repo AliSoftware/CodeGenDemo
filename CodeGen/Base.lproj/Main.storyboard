@@ -1,14 +1,19 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Home View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="HomeViewController" customModule="CodeGen" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -16,8 +21,46 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="uEa-6c-7Hf">
+                                <rect key="frame" x="20" y="166.5" width="335" height="335"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="uEa-6c-7Hf" secondAttribute="height" multiplier="1:1" id="0rK-WJ-n7O"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l8J-YG-Rbi">
+                                <rect key="frame" x="166" y="137" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ckc-fS-9u4">
+                                <rect key="frame" x="151" y="541.5" width="72" height="30"/>
+                                <state key="normal" title="SlideShow"/>
+                                <connections>
+                                    <action selector="presentSlideShow" destination="BYZ-38-t0r" eventType="touchUpInside" id="0a6-Vv-LD8"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Ckc-fS-9u4" firstAttribute="top" secondItem="uEa-6c-7Hf" secondAttribute="bottom" constant="40" id="8CZ-jF-NtA"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" relation="greaterThanOrEqual" secondItem="Ckc-fS-9u4" secondAttribute="bottom" constant="20" id="Cep-sb-AdO"/>
+                            <constraint firstItem="uEa-6c-7Hf" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" priority="750" constant="20" id="OqH-6f-UnN"/>
+                            <constraint firstItem="Ckc-fS-9u4" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="RcQ-5u-4Zd"/>
+                            <constraint firstItem="uEa-6c-7Hf" firstAttribute="top" secondItem="l8J-YG-Rbi" secondAttribute="bottom" constant="8.5" id="U8q-Ph-2qm"/>
+                            <constraint firstItem="uEa-6c-7Hf" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="UPj-NC-8lP"/>
+                            <constraint firstItem="uEa-6c-7Hf" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Y9D-HW-zZp"/>
+                            <constraint firstItem="uEa-6c-7Hf" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="btT-Nf-YBU"/>
+                            <constraint firstItem="l8J-YG-Rbi" firstAttribute="top" relation="greaterThanOrEqual" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="20" id="eLU-1k-mKN"/>
+                            <constraint firstItem="l8J-YG-Rbi" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="k3M-MS-Ru2"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="imageView" destination="uEa-6c-7Hf" id="G4q-9t-N4A"/>
+                        <outlet property="slideshowButton" destination="Ckc-fS-9u4" id="pVO-AM-vYE"/>
+                        <outlet property="titleLabel" destination="l8J-YG-Rbi" id="pn5-MJ-agt"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
