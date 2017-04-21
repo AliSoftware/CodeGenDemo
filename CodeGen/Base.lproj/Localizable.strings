@@ -6,4 +6,4 @@
   Copyright © 2017 AliSoftware. All rights reserved.
 */
 
-"greetings" = "Hello %@!";
+"greetings" = "Üdvözöljük a %@, az #%d találkozó %@!";

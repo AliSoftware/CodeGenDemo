@@ -1,0 +1,6 @@
+{% for family in families %}
+- {{ family.name }}
+{% for font in family.fonts %}
+  - {{font.fontName}}
+{% endfor %}
+{% endfor %}

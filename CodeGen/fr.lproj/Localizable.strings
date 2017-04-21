@@ -6,4 +6,4 @@
   Copyright © 2017 AliSoftware. All rights reserved.
 */
 
-"gretings" = "Bonjour %@!";
+"greetings" = "Bonjour et Bienvenue à %@, le meetup #%d en %@!";

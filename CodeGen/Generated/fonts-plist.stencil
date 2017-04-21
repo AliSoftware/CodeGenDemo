@@ -5,7 +5,7 @@
 {% for family in families %}
   <!-- {{family.name}} -->
   {% for font in family.fonts %}
-  <string>{{font.fontName}}</string>
+  <string>{{font.fontName}}.ttf</string>
   {% endfor %}
 {% endfor %}
 </array>

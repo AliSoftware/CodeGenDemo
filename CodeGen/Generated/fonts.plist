@@ -3,21 +3,21 @@
 <plist version="1.0">
 <array>
   <!-- Roboto -->
-  <string>Roboto-Black</string>
-  <string>Roboto-BlackItalic</string>
-  <string>Roboto-Bold</string>
-  <string>Roboto-BoldCondensed</string>
-  <string>Roboto-BoldCondensedItalic</string>
-  <string>Roboto-BoldItalic</string>
-  <string>Roboto-Condensed</string>
-  <string>Roboto-CondensedItalic</string>
-  <string>Roboto-Italic</string>
-  <string>Roboto-Light</string>
-  <string>Roboto-LightItalic</string>
-  <string>Roboto-Medium</string>
-  <string>Roboto-MediumItalic</string>
-  <string>Roboto-Regular</string>
-  <string>Roboto-Thin</string>
-  <string>Roboto-ThinItalic</string>
+  <string>Roboto-Black.ttf</string>
+  <string>Roboto-BlackItalic.ttf</string>
+  <string>Roboto-Bold.ttf</string>
+  <string>Roboto-BoldCondensed.ttf</string>
+  <string>Roboto-BoldCondensedItalic.ttf</string>
+  <string>Roboto-BoldItalic.ttf</string>
+  <string>Roboto-Condensed.ttf</string>
+  <string>Roboto-CondensedItalic.ttf</string>
+  <string>Roboto-Italic.ttf</string>
+  <string>Roboto-Light.ttf</string>
+  <string>Roboto-LightItalic.ttf</string>
+  <string>Roboto-Medium.ttf</string>
+  <string>Roboto-MediumItalic.ttf</string>
+  <string>Roboto-Regular.ttf</string>
+  <string>Roboto-Thin.ttf</string>
+  <string>Roboto-ThinItalic.ttf</string>
 </array>
 </plist>

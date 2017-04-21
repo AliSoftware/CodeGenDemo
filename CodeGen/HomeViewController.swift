@@ -19,7 +19,7 @@ class HomeViewController: UIViewController {
   // MARK: Private properties
 
   private let fonts = [
-    "Roboto-Thin", "Roboto-Bold", "Roboto-BlackItalic"
+    "Avenir-Black", "Avenir-Italique", "Avenir-Light" // Whoops, wrong postscript name 😕
   ].map({ UIFont(name: $0, size: 18) })
 
   private lazy var currentFontIndex = 0
@@ -28,15 +28,19 @@ class HomeViewController: UIViewController {
 
   override func viewDidLoad() {
     super.viewDidLoad()
-    // String-based API for Localizable Strings 😕
-    let format = NSLocalizedString("greetings", comment: "")
+
+    let country = Locale.current.localizedString(forRegionCode: "hu") ?? "Magyarországon"
+
+    // String-based API for Localizable Strings 😕 What if I mistype the key?
+    let format = NSLocalizedString("greeting", comment: "")
     // You can use any argument in String(format:) even non-matching ones 😕💣
-    self.titleLabel.text = String(format: format, "NSBudapest")
+    self.titleLabel.text = String(format: format, 1, "NSBudapest", country)
+
     // And another String-based API, error-prone to typos and mismatches between file name and postscript name 😕
     self.titleLabel.font = fonts[currentFontIndex]
 
-    // Ok, Image literals made things a little better, but still not organized as groups and only for Bundle.main
-    self.imageView.image = #imageLiteral(resourceName: "NSBudapest")
+    // And yet another one
+    self.imageView.image = UIImage(named: "nsbudapest")
 
   }
 
@@ -53,6 +57,7 @@ class HomeViewController: UIViewController {
     let sb = UIStoryboard(name: "SlideShowViewController", bundle: nil)
     // And has to force-cast (and will 💣 at runtime if inconsistent instead of being detected at compile-time)
     let vc = sb.instantiateInitialViewController() as! SlideShowViewController
+    // Ok, Image literals made things a little better, but still not organized as groups and only for Bundle.main
     vc.images = [
       #imageLiteral(resourceName: "photos/Budapest-1"),
       #imageLiteral(resourceName: "photos/Budapest-2"),
