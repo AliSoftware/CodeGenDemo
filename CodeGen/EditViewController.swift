@@ -46,7 +46,6 @@ class EditViewController: UIViewController {
   private func translateUI() {
     self.title = NSLocalizedString("edit.screenTitle", comment: "")
 
-
     let mappings = [
       titleLabel: "edit.fields.title",
       authorLabel: "edit.fields.author",
@@ -81,7 +80,6 @@ class EditViewController: UIViewController {
   }
 }
 
-
 protocol NavigationPopConfirmation {
   func confirmNavigationPop(performPop: @escaping () -> Void)
 }
@@ -90,7 +88,7 @@ protocol NavigationPopConfirmation {
 extension UINavigationController: UINavigationBarDelegate {
   public func navigationBar(_ navigationBar: UINavigationBar, shouldPop item: UINavigationItem) -> Bool {
     if let vc = self.topViewController as? NavigationPopConfirmation {
-      vc.confirmNavigationPop() { [weak self] in
+      vc.confirmNavigationPop { [weak self] in
         DispatchQueue.main.async {
           self?.popViewController(animated: true)
         }
@@ -117,7 +115,7 @@ extension EditViewController: NavigationPopConfirmation {
     let format = NSLocalizedString("edit.alert.message", comment: "")
     // FIXME: 😱 You can use any argument in String(format:) even non-matching ones 😕💣
     let message = String(format: format, imageTitle)
-    
+
     let alert = UIAlertController(
       // FIXME: String-based API 😱
       title: NSLocalizedString("edit.alert.title", comment: ""),

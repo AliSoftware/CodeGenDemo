@@ -11,7 +11,7 @@ import UIKit
 class HomeViewController: UIViewController {
 
   // MARK: IBOutlets
-  
+
   @IBOutlet weak var titleLabel: UILabel!
   @IBOutlet weak var imageView: UIImageView!
   @IBOutlet weak var slideshowButton: UIButton!
@@ -21,7 +21,7 @@ class HomeViewController: UIViewController {
   private let fonts = [
     // FIXME: 😱 String-based API, prone to errors
     "Avenir-Black", "Avenir-Italique", "Avenir-Light" // Whoops, wrong postscript name 😕
-  ].map({ UIFont(name: $0, size: 18) })
+    ].map({ UIFont(name: $0, size: 18) })
 
   private lazy var currentFontIndex = 0
 
@@ -60,7 +60,9 @@ class HomeViewController: UIViewController {
     // FIXME: 😱 String-based API, will crash if typo 💣
     let sb = UIStoryboard(name: "Photos", bundle: nil)
     // FIXME: 😱 String-based API, will crash if typo 💣
-    let vc = sb.instantiateInitialViewController() as! SlideShowViewController
+    guard let vc = sb.instantiateInitialViewController() as? SlideShowViewController else {
+      fatalError("The storyboard's initialVC isn't a SlideShowViewController")
+    }
     // Ok, Image literals made things a little better, but still not organized as groups and only for Bundle.main
     vc.images = [
       #imageLiteral(resourceName: "photos/Budapest-1"),
@@ -69,7 +71,7 @@ class HomeViewController: UIViewController {
       #imageLiteral(resourceName: "photos/Budapest-4"),
       #imageLiteral(resourceName: "photos/Budapest-5")
       ].map { ($0, ImageMetaData()) }
-    
+
     let nc = UINavigationController(rootViewController: vc)
     self.present(nc, animated: true)
   }
