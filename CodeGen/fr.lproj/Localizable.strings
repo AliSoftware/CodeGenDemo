@@ -6,19 +6,44 @@
   Copyright © 2017 AliSoftware. All rights reserved.
 */
 
+///////////////////////////////////////////////////////////////
+// MARK: Home screen
+
+/* Welcome message */
 "home.greetings" = "Bienvenue à %1$@, le meetup #%2$d meetup en %3$@!";
+/* "Slideshow" button */
 "home.slideshow" = "Diaporama";
 
+///////////////////////////////////////////////////////////////
+// MARK: Slideshow screen buttons
+
+/* "Edit" NavBar button */
 "image.edit" = "Editer";
+/* "Close" NavBar button */
 "image.close" = "Fermer";
 
+///////////////////////////////////////////////////////////////
+// MARK: Edit Screen
+
+/* Edit screen title */
 "edit.screenTitle" = "Edition";
+/* Field label for "Title" */
 "edit.fields.title" = "Titre";
+/* Field label for "Author" */
 "edit.fields.author" = "Auteur";
+/* Field label for "Date" */
 "edit.fields.date" = "Date";
+/* Field label for "Tags" */
 "edit.fields.tags" = "Tags";
 
+///////////////////////////////////////////////////////////////
+// MARK: Edit Alert
+
+/* alert title: "Dismiss changes?" */
 "edit.alert.title" = "Annuler les modifications ?";
+/* alert message: "Changes have been made to the image « %@ »" */
 "edit.alert.message" = "Les informations sur l'image « %@ » ont été modifiées";
+/* "Save changes" button title */
 "edit.alert.save" = "Enregistrer";
+/* "Dismiss changes" button title */
 "edit.alert.dismiss" = "Annuler";
