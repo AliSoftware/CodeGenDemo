@@ -26,15 +26,15 @@
 // MARK: Edit Screen
 
 /* Edit screen title */
-"edit.screenTitle" = "Mágus szerkesztése";
+"edit.screenTitle" = "Szerkesztés";
 /* Field label for "Title" */
-"edit.fields.title" = "Felirat";
+"edit.fields.title" = "Cím";
 /* Field label for "Author" */
 "edit.fields.author" = "Szerző";
 /* Field label for "Date" */
 "edit.fields.date" = "Dátum";
 /* Field label for "Tags" */
-"edit.fields.tags" = "Címkéket";
+"edit.fields.tags" = "Címkék";
 
 ///////////////////////////////////////////////////////////////
 // MARK: Edit Alert
