@@ -112,7 +112,7 @@
 				095250E71EA8E12000674705 /* SlideShowViewController.swift */,
 				095250EB1EAB6C9000674705 /* EditViewController.swift */,
 			);
-			name = ViewControllers;
+			path = ViewControllers;
 			sourceTree = "<group>";
 		};
 		095514F91EAC10EA005AAAC6 /* Utils */ = {
@@ -122,7 +122,7 @@
 				095514F71EAC08BF005AAAC6 /* UIViewController+Alert.swift */,
 				095514FA1EAC1211005AAAC6 /* FieldsCycler.swift */,
 			);
-			name = Utils;
+			path = Utils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
