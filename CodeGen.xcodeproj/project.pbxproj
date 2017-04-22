@@ -14,9 +14,11 @@
 		095250A51EA8D64000674705 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 095250A31EA8D64000674705 /* LaunchScreen.storyboard */; };
 		095250B01EA8D64000674705 /* CodeGenTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 095250AF1EA8D64000674705 /* CodeGenTests.swift */; };
 		095250BC1EA8D77B00674705 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 095250BA1EA8D77B00674705 /* Localizable.strings */; };
-		095250E61EA8E11300674705 /* SlideShowViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 095250E51EA8E11300674705 /* SlideShowViewController.storyboard */; };
+		095250E61EA8E11300674705 /* Photos.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 095250E51EA8E11300674705 /* Photos.storyboard */; };
 		095250E81EA8E12000674705 /* SlideShowViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 095250E71EA8E12000674705 /* SlideShowViewController.swift */; };
 		095250EA1EAAAF0600674705 /* Avenir.ttc in Resources */ = {isa = PBXBuildFile; fileRef = 095250E91EAAAF0600674705 /* Avenir.ttc */; };
+		095250EC1EAB6C9000674705 /* EditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 095250EB1EAB6C9000674705 /* EditViewController.swift */; };
+		095250F01EAB73BB00674705 /* ImageMetaData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 095250EF1EAB73BB00674705 /* ImageMetaData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,9 +45,11 @@
 		095250BB1EA8D77B00674705 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/Localizable.strings; sourceTree = "<group>"; };
 		095250BD1EA8D79A00674705 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Localizable.strings; sourceTree = "<group>"; };
 		095250BE1EA8D7AF00674705 /* hu */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = hu; path = hu.lproj/Localizable.strings; sourceTree = "<group>"; };
-		095250E51EA8E11300674705 /* SlideShowViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = SlideShowViewController.storyboard; sourceTree = "<group>"; };
+		095250E51EA8E11300674705 /* Photos.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Photos.storyboard; sourceTree = "<group>"; };
 		095250E71EA8E12000674705 /* SlideShowViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SlideShowViewController.swift; sourceTree = "<group>"; };
 		095250E91EAAAF0600674705 /* Avenir.ttc */ = {isa = PBXFileReference; lastKnownFileType = file; path = Avenir.ttc; sourceTree = "<group>"; };
+		095250EB1EAB6C9000674705 /* EditViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditViewController.swift; sourceTree = "<group>"; };
+		095250EF1EAB73BB00674705 /* ImageMetaData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageMetaData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,8 +94,10 @@
 				0952509A1EA8D64000674705 /* AppDelegate.swift */,
 				0952509E1EA8D64000674705 /* Main.storyboard */,
 				0952509C1EA8D64000674705 /* HomeViewController.swift */,
-				095250E51EA8E11300674705 /* SlideShowViewController.storyboard */,
+				095250E51EA8E11300674705 /* Photos.storyboard */,
 				095250E71EA8E12000674705 /* SlideShowViewController.swift */,
+				095250EB1EAB6C9000674705 /* EditViewController.swift */,
+				095250EF1EAB73BB00674705 /* ImageMetaData.swift */,
 				095250BF1EA8D85500674705 /* Resources */,
 				095250A31EA8D64000674705 /* LaunchScreen.storyboard */,
 				095250A61EA8D64000674705 /* Info.plist */,
@@ -217,7 +223,7 @@
 				095250BC1EA8D77B00674705 /* Localizable.strings in Resources */,
 				095250EA1EAAAF0600674705 /* Avenir.ttc in Resources */,
 				095250A21EA8D64000674705 /* Assets.xcassets in Resources */,
-				095250E61EA8E11300674705 /* SlideShowViewController.storyboard in Resources */,
+				095250E61EA8E11300674705 /* Photos.storyboard in Resources */,
 				095250A01EA8D64000674705 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -236,6 +242,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				095250EC1EAB6C9000674705 /* EditViewController.swift in Sources */,
+				095250F01EAB73BB00674705 /* ImageMetaData.swift in Sources */,
 				0952509D1EA8D64000674705 /* HomeViewController.swift in Sources */,
 				0952509B1EA8D64000674705 /* AppDelegate.swift in Sources */,
 				095250E81EA8E12000674705 /* SlideShowViewController.swift in Sources */,

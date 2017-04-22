@@ -6,4 +6,19 @@
   Copyright © 2017 AliSoftware. All rights reserved.
 */
 
-"greetings" = "Üdvözöljük a %@, az #%d találkozó %@!";
+"home.greetings" = "Welcome to %1$@, the #%2$d meetup in %3$@!";
+"home.slideshow" = "Slideshow";
+
+"image.edit" = "Edit";
+"image.close" = "Close";
+
+"edit.screenTitle" = "Edit Image";
+"edit.info.title" = "Title";
+"edit.info.author" = "Author";
+"edit.info.date" = "Date";
+"edit.info.tags" = "Tags";
+
+"edit.image.alert.title" = "Dismiss changes?";
+"edit.image.alert.message" = "Changes have been made to the image « %@ »";
+"edit.image.alert.save" = "Save changes";
+"edit.image.alert.dismiss" = "Dismiss changes";

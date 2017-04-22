@@ -12,20 +12,20 @@ class SlideShowViewController: UIViewController {
 
   // MARK: IBOutlets
 
-  @IBOutlet weak var previousButton: UIButton!
-  @IBOutlet weak var nextButton: UIButton!
-  @IBOutlet weak var imageView: UIImageView!
+  @IBOutlet private weak var previousButton: UIButton!
+  @IBOutlet private weak var nextButton: UIButton!
+  @IBOutlet private weak var imageView: UIImageView!
 
   // MARK: Public properties
 
-  var images: [UIImage] = []
+  var images: [(image: UIImage, metaData: ImageMetaData)] = []
 
   // MARK: Private propertes
 
   private var currentIndex = 0 {
     willSet {
       if newValue < 0 { self.currentIndex = 0 }
-      if newValue > images.count-1 { self.currentIndex = images.count-1 }
+      if newValue > self.images.count-1 { self.currentIndex = self.images.count-1 }
     }
     didSet {
       updateUI()
@@ -36,27 +36,42 @@ class SlideShowViewController: UIViewController {
 
   override func viewDidLoad() {
     super.viewDidLoad()
+    // FIXME: 😱 String-based API, prone to typos
+    self.navigationItem.leftBarButtonItem?.title = NSLocalizedString("image.close", comment: "")
+    self.navigationItem.rightBarButtonItem?.title = NSLocalizedString("image.edit", comment: "")
     self.updateUI()
   }
 
   // MARK: IBActions
 
-  @IBAction func showPrevious() {
+  @IBAction private func showPrevious() {
     self.currentIndex -= 1
   }
 
-  @IBAction func showNext() {
+  @IBAction private func showNext() {
     self.currentIndex += 1
   }
 
-  @IBAction func close() {
+  @IBAction private func close() {
     self.presentingViewController?.dismiss(animated: true)
   }
 
+  @IBAction private func edit() {
+    // FIXME: 😱 String-based API, will crash if typo 💣
+    let vc = self.storyboard?.instantiateViewController(withIdentifier: "EditVC")
+    guard let editVC = vc as? EditViewController else { return }
+    let currentImage = self.images[self.currentIndex]
+    editVC.imageMetaData = currentImage.metaData
+    editVC.saveMetaData = { newMetaData in
+      self.images[self.currentIndex] = (currentImage.image, newMetaData)
+    }
+    self.navigationController?.pushViewController(editVC, animated: true)
+  }
+
   // MARK: Private methods
-  
+
   private func updateUI() {
-    self.imageView.image = images[self.currentIndex]
+    self.imageView.image = images[self.currentIndex].image
     self.previousButton.isEnabled = self.currentIndex > 0
     self.nextButton.isEnabled = self.currentIndex < self.images.count - 1
   }

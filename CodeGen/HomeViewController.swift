@@ -19,6 +19,7 @@ class HomeViewController: UIViewController {
   // MARK: Private properties
 
   private let fonts = [
+    // FIXME: 😱 String-based API, prone to errors
     "Avenir-Black", "Avenir-Italique", "Avenir-Light" // Whoops, wrong postscript name 😕
   ].map({ UIFont(name: $0, size: 18) })
 
@@ -29,18 +30,21 @@ class HomeViewController: UIViewController {
   override func viewDidLoad() {
     super.viewDidLoad()
 
-    let country = Locale.current.localizedString(forRegionCode: "hu") ?? "Magyarországon"
+    let country = Locale.current.localizedString(forRegionCode: "hu") ?? "Magyarország"
 
-    // String-based API for Localizable Strings 😕 What if I mistype the key?
-    let format = NSLocalizedString("greeting", comment: "")
-    // You can use any argument in String(format:) even non-matching ones 😕💣
-    self.titleLabel.text = String(format: format, 1, "NSBudapest", country)
+    // FIXME: 😱 String-based API, prone to errors
+    let format = NSLocalizedString("home.greetings", comment: "")
+    // FIXME: 😱 You can use any argument in String(format:) even non-matching ones 😕💣
+    self.titleLabel.text = String(format: format, "NSBudapest", 1, country)
 
-    // And another String-based API, error-prone to typos and mismatches between file name and postscript name 😕
     self.titleLabel.font = fonts[currentFontIndex]
 
-    // And yet another one
-    self.imageView.image = UIImage(named: "nsbudapest")
+    // FIXME: 😱 String-based API, prone to errors
+    self.imageView.image = UIImage(named: "NSBudapest")
+
+    // FIXME: 😱 String-based API, prone to errors
+    let btnTitle = NSLocalizedString("home.slideshow", comment: "")
+    self.slideshowButton.setTitle(btnTitle, for: .normal)
 
   }
 
@@ -53,9 +57,9 @@ class HomeViewController: UIViewController {
   }
 
   @IBAction func presentSlideShow() {
-    // String-based API again, and will crash if no Storyboard with this name 😕💣
-    let sb = UIStoryboard(name: "SlideShowViewController", bundle: nil)
-    // And has to force-cast (and will 💣 at runtime if inconsistent instead of being detected at compile-time)
+    // FIXME: 😱 String-based API, will crash if typo 💣
+    let sb = UIStoryboard(name: "Photos", bundle: nil)
+    // FIXME: 😱 String-based API, will crash if typo 💣
     let vc = sb.instantiateInitialViewController() as! SlideShowViewController
     // Ok, Image literals made things a little better, but still not organized as groups and only for Bundle.main
     vc.images = [
@@ -64,7 +68,9 @@ class HomeViewController: UIViewController {
       #imageLiteral(resourceName: "photos/Budapest-3"),
       #imageLiteral(resourceName: "photos/Budapest-4"),
       #imageLiteral(resourceName: "photos/Budapest-5")
-    ]
-    self.present(vc, animated: true)
+      ].map { ($0, ImageMetaData()) }
+    
+    let nc = UINavigationController(rootViewController: vc)
+    self.present(nc, animated: true)
   }
 }

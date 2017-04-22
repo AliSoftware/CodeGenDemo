@@ -6,4 +6,19 @@
   Copyright © 2017 AliSoftware. All rights reserved.
 */
 
-"greetings" = "Bonjour et Bienvenue à %@, le meetup #%d en %@!";
+"home.greetings" = "Bienvenue à %1$@, le meetup #%2$d meetup en %3$@!";
+"home.slideshow" = "Diaporama";
+
+"image.edit" = "Editer";
+"image.close" = "Fermer";
+
+"edit.screenTitle" = "Edition";
+"edit.info.title" = "Titre";
+"edit.info.author" = "Auteur";
+"edit.info.date" = "Date";
+"edit.info.tags" = "Tags";
+
+"edit.image.alert.title" = "Annuler les modifications ?";
+"edit.image.alert.message" = "Les informations sur l'image « %@ » ont été modifiées";
+"edit.image.alert.save" = "Enregistrer";
+"edit.image.alert.dismiss" = "Annuler";
