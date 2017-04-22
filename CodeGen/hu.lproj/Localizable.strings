@@ -18,32 +18,32 @@
 // MARK: Slideshow screen buttons
 
 /* "Edit" NavBar button */
-"image.edit" = "🇭🇺 Szerk.";
+"image.edit" = "Szerk.";
 /* "Close" NavBar button */
-"image.close" = "🇭🇺 Close";
+"image.close" = "Bezárás";
 
 ///////////////////////////////////////////////////////////////
 // MARK: Edit Screen
 
 /* Edit screen title */
-"edit.screenTitle" = "🇭🇺 Edit Image";
+"edit.screenTitle" = "Mágus szerkesztése";
 /* Field label for "Title" */
-"edit.fields.title" = "🇭🇺 Title";
+"edit.fields.title" = "Felirat";
 /* Field label for "Author" */
-"edit.fields.author" = "🇭🇺 Author";
+"edit.fields.author" = "Szerző";
 /* Field label for "Date" */
-"edit.fields.date" = "🇭🇺 Date";
+"edit.fields.date" = "Dátum";
 /* Field label for "Tags" */
-"edit.fields.tags" = "🇭🇺 Tags";
+"edit.fields.tags" = "Címkéket";
 
 ///////////////////////////////////////////////////////////////
 // MARK: Edit Alert
 
 /* alert title: "Dismiss changes?" */
-"edit.alert.title" = "🇭🇺 Dismiss changes?";
+"edit.alert.title" = "Elutasítja a változtatásokat?";
 /* alert message: "Changes have been made to the image « %@ »" */
-"edit.alert.message" = "🇭🇺 Changes have been made to the image « %@ »";
+"edit.alert.message" = "Változások történtek a « %@ » képen";
 /* "Save changes" button title */
-"edit.alert.save" = "🇭🇺 Save changes";
+"edit.alert.save" = "Változtatások mentése";
 /* "Dismiss changes" button title */
-"edit.alert.dismiss" = "🇭🇺 Dismiss changes";
+"edit.alert.dismiss" = "Módosítások törlése";
