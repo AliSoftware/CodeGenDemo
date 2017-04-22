@@ -92,7 +92,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="B29-nW-Zd5">
-                                        <rect key="frame" x="10" y="10" width="355" height="512.5"/>
+                                        <rect key="frame" x="10" y="10" width="355" height="805"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nl5-zA-ghW">
                                                 <rect key="frame" x="0.0" y="0.0" width="355" height="20.5"/>
@@ -124,13 +124,17 @@
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="-" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zal-1d-d6h">
+                                            <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="-" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zal-1d-d6h">
                                                 <rect key="frame" x="0.0" y="161.5" width="355" height="20.5"/>
+                                                <gestureRecognizers/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <color key="textColor" red="0.20444519089999999" green="0.45173420600000003" blue="0.73116861980000003" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
+                                                <connections>
+                                                    <outletCollection property="gestureRecognizers" destination="5pF-mL-D7n" appends="YES" id="ADe-HS-9B9"/>
+                                                </connections>
                                             </label>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RXg-40-0Kh">
+                                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RXg-40-0Kh">
                                                 <rect key="frame" x="0.0" y="190" width="355" height="256"/>
                                                 <subviews>
                                                     <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="XoP-0r-qzh">
@@ -162,6 +166,31 @@
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Kind" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rFB-Mt-HMv">
+                                                <rect key="frame" x="0.0" y="520.5" width="355" height="20.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qyf-om-1EF">
+                                                <rect key="frame" x="0.0" y="549" width="355" height="256"/>
+                                                <subviews>
+                                                    <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4o7-6o-XBz">
+                                                        <rect key="frame" x="17.5" y="0.0" width="320" height="256"/>
+                                                        <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <connections>
+                                                            <outlet property="dataSource" destination="8FW-nO-TBm" id="Y9L-hX-pfI"/>
+                                                            <outlet property="delegate" destination="8FW-nO-TBm" id="pGE-zX-Sjd"/>
+                                                        </connections>
+                                                    </pickerView>
+                                                </subviews>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <constraints>
+                                                    <constraint firstItem="4o7-6o-XBz" firstAttribute="top" secondItem="qyf-om-1EF" secondAttribute="top" id="OWt-ch-CZH"/>
+                                                    <constraint firstAttribute="bottom" secondItem="4o7-6o-XBz" secondAttribute="bottom" id="j4Q-gu-87O"/>
+                                                    <constraint firstItem="4o7-6o-XBz" firstAttribute="centerX" secondItem="qyf-om-1EF" secondAttribute="centerX" id="pe9-4a-apt"/>
+                                                </constraints>
+                                            </view>
                                         </subviews>
                                     </stackView>
                                 </subviews>
@@ -191,6 +220,8 @@
                         <outlet property="dateField" destination="Zal-1d-d6h" id="cvf-p4-XBt"/>
                         <outlet property="dateLabel" destination="irb-h2-Odg" id="FDh-97-duu"/>
                         <outlet property="datePicker" destination="XoP-0r-qzh" id="LRe-8v-vei"/>
+                        <outlet property="kindLabel" destination="rFB-Mt-HMv" id="ibp-ew-giB"/>
+                        <outlet property="kindPicker" destination="4o7-6o-XBz" id="mvc-vf-IJS"/>
                         <outlet property="tagsField" destination="nmS-lo-ceE" id="vWD-Pz-Ajd"/>
                         <outlet property="tagsLabel" destination="KvJ-1g-Ddh" id="KW3-Dy-z7g"/>
                         <outlet property="titleField" destination="TWp-5t-dZX" id="PSC-4x-UwV"/>
@@ -198,6 +229,11 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eoO-b6-jKF" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="5pF-mL-D7n">
+                    <connections>
+                        <action selector="toggleDatePicker" destination="8FW-nO-TBm" id="GHP-Hg-HFH"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="553" y="143"/>
         </scene>

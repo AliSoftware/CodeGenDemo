@@ -35,6 +35,8 @@
 "edit.fields.date" = "Dátum";
 /* Field label for "Tags" */
 "edit.fields.tags" = "Címkék";
+/* Field label for "Kind" */
+"edit.fields.kind" = "Válfaj";
 
 ///////////////////////////////////////////////////////////////
 // MARK: Edit Alert
@@ -47,3 +49,19 @@
 "edit.alert.save" = "Változtatások mentése";
 /* "Dismiss changes" button title */
 "edit.alert.dismiss" = "Módosítások törlése";
+
+///////////////////////////////////////////////////////////////
+// MARK: Image Kinds
+
+/* Image Kind: unspecified */
+"imagekind.unspecified" = "🇭🇺 Unspecified";
+/* Image Kind: landscape */
+"imagekind.landscape" = "🇭🇺 Nature/Landscape";
+/* Image Kind: building */
+"imagekind.building" = "🇭🇺 Building";
+/* Image Kind: portrait */
+"imagekind.portrait" = "🇭🇺 Face/Portrait";
+/* Image Kind: drawing */
+"imagekind.drawing" = "🇭🇺 Drawing";
+/* Image Kind: painting */
+"imagekind.painting" = "🇭🇺 Painting";

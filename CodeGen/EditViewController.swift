@@ -21,6 +21,8 @@ class EditViewController: UIViewController {
   @IBOutlet private weak var datePicker: UIDatePicker!
   @IBOutlet private weak var tagsLabel: UILabel!
   @IBOutlet private weak var tagsField: UITextField!
+  @IBOutlet private weak var kindLabel: UILabel!
+  @IBOutlet private weak var kindPicker: UIPickerView!
 
   // MARK: Properties
 
@@ -37,6 +39,10 @@ class EditViewController: UIViewController {
 
   // MARK: IBActions
 
+  @IBAction private func toggleDatePicker() {
+    self.datePicker.superview?.isHidden = !(self.datePicker.superview?.isHidden ?? false)
+  }
+
   @IBAction private func dateChanged(_ sender: UIDatePicker) {
     self.dateField.text = format(date: sender.date)
   }
@@ -50,7 +56,8 @@ class EditViewController: UIViewController {
       titleLabel: "edit.fields.title",
       authorLabel: "edit.fields.author",
       dateLabel: "edit.fields.date",
-      tagsLabel: "edit.fields.tags"
+      tagsLabel: "edit.fields.tags",
+      kindLabel: "edit.fields.kind"
     ]
 
     for (label, key) in mappings {
@@ -68,6 +75,8 @@ class EditViewController: UIViewController {
     self.authorField.text = info.author
     self.dateField.text = format(date: info.date)
     self.tagsField.text = info.tags.joined(separator: " ")
+    let row = ImageKind.allValues.index(of: info.kind) ?? 0
+    self.kindPicker.selectRow(row, inComponent: 0, animated: false)
   }
 
   fileprivate func imageMetaDataFromForm() -> ImageMetaData {
@@ -75,29 +84,27 @@ class EditViewController: UIViewController {
       title: self.titleField.text ?? "",
       author: self.authorField.text ?? "",
       date: self.datePicker.date,
-      tags: ImageMetaData.tags(from: self.tagsField.text ?? "")
+      tags: ImageMetaData.tags(from: self.tagsField.text ?? ""),
+      kind: ImageKind.allValues[self.kindPicker.selectedRow(inComponent: 0)]
     )
   }
 }
 
-protocol NavigationPopConfirmation {
-  func confirmNavigationPop(performPop: @escaping () -> Void)
-}
+// MARK: - UIPickerView
 
-// Ask confirmation when going back if changes were made
-extension UINavigationController: UINavigationBarDelegate {
-  public func navigationBar(_ navigationBar: UINavigationBar, shouldPop item: UINavigationItem) -> Bool {
-    if let vc = self.topViewController as? NavigationPopConfirmation {
-      vc.confirmNavigationPop { [weak self] in
-        DispatchQueue.main.async {
-          self?.popViewController(animated: true)
-        }
-      }
-      return false
-    }
-    return true
+extension EditViewController: UIPickerViewDataSource, UIPickerViewDelegate {
+  func numberOfComponents(in pickerView: UIPickerView) -> Int {
+    return 1
+  }
+  func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
+    return ImageKind.allValues.count
+  }
+  func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
+    return ImageKind.allValues[row].localizedString
   }
 }
+
+// MARK: - NavigationBar Pop Confirmation
 
 extension EditViewController: NavigationPopConfirmation {
   func confirmNavigationPop(performPop: @escaping () -> Void) {

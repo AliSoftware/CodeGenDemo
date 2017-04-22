@@ -35,6 +35,8 @@
 "edit.fields.date" = "Date";
 /* Field label for "Tags" */
 "edit.fields.tags" = "Tags";
+/* Field label for "Kind" */
+"edit.fields.kind" = "Kind";
 
 ///////////////////////////////////////////////////////////////
 // MARK: Edit Alert
@@ -47,3 +49,19 @@
 "edit.alert.save" = "Save changes";
 /* "Dismiss changes" button title */
 "edit.alert.dismiss" = "Dismiss changes";
+
+///////////////////////////////////////////////////////////////
+// MARK: Image Kinds
+
+/* Image Kind: unspecified */
+"imagekind.unspecified" = "Unspecified";
+/* Image Kind: landscape */
+"imagekind.landscape" = "Nature/Landscape";
+/* Image Kind: building */
+"imagekind.building" = "Building";
+/* Image Kind: portrait */
+"imagekind.portrait" = "Face/Portrait";
+/* Image Kind: drawing */
+"imagekind.drawing" = "Drawing";
+/* Image Kind: painting */
+"imagekind.painting" = "Painting";
