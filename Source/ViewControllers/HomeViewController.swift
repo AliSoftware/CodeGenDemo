@@ -20,7 +20,9 @@ class HomeViewController: UIViewController {
 
   private let fonts = [
     // FIXME: 😱 String-based API, prone to errors
-    "Avenir-Black", "Avenir-Italique", "Avenir-Light" // Whoops, wrong postscript name 😕
+    "Avenir-Black",
+    "Avenir-Italique",  // FIXME: Whoops, wrong postscript name 😕
+    "Avenir-Light",
     ].map({ UIFont(name: $0, size: 18) })
 
   private lazy var currentFontIndex = 0
@@ -59,7 +61,7 @@ class HomeViewController: UIViewController {
   @IBAction func presentSlideShow() {
     // FIXME: 😱 String-based API, will crash if typo 💣
     let sb = UIStoryboard(name: "Photos", bundle: nil)
-    // FIXME: 😱 String-based API, will crash if typo 💣
+    // FIXME: 😱 Will crash if wrong type 💣
     guard let vc = sb.instantiateInitialViewController() as? SlideShowViewController else {
       fatalError("The storyboard's initialVC isn't a SlideShowViewController")
     }
