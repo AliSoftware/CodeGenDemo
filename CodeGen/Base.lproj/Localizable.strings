@@ -13,12 +13,12 @@
 "image.close" = "Close";
 
 "edit.screenTitle" = "Edit Image";
-"edit.info.title" = "Title";
-"edit.info.author" = "Author";
-"edit.info.date" = "Date";
-"edit.info.tags" = "Tags";
+"edit.fields.title" = "Title";
+"edit.fields.author" = "Author";
+"edit.fields.date" = "Date";
+"edit.fields.tags" = "Tags";
 
-"edit.image.alert.title" = "Dismiss changes?";
-"edit.image.alert.message" = "Changes have been made to the image « %@ »";
-"edit.image.alert.save" = "Save changes";
-"edit.image.alert.dismiss" = "Dismiss changes";
+"edit.alert.title" = "Dismiss changes?";
+"edit.alert.message" = "Changes have been made to the image « %@ »";
+"edit.alert.save" = "Save changes";
+"edit.alert.dismiss" = "Dismiss changes";

@@ -48,10 +48,10 @@ class EditViewController: UIViewController {
 
 
     let mappings = [
-      titleLabel: "edit.info.title",
-      authorLabel: "edit.info.author",
-      dateLabel: "edit.info.date",
-      tagsLabel: "edit.info.tags"
+      titleLabel: "edit.fields.title",
+      authorLabel: "edit.fields.author",
+      dateLabel: "edit.fields.date",
+      tagsLabel: "edit.fields.tags"
     ]
 
     for (label, key) in mappings {
@@ -114,19 +114,19 @@ extension EditViewController: NavigationPopConfirmation {
     // There has been changes, so ask confirmation first
     let imageTitle = self.imageMetaData?.title ?? ""
     // FIXME: String-based API 😱
-    let format = NSLocalizedString("edit.image.alert.message", comment: "")
+    let format = NSLocalizedString("edit.alert.message", comment: "")
     // FIXME: 😱 You can use any argument in String(format:) even non-matching ones 😕💣
     let message = String(format: format, imageTitle)
     
     let alert = UIAlertController(
       // FIXME: String-based API 😱
-      title: NSLocalizedString("edit.image.alert.title", comment: ""),
+      title: NSLocalizedString("edit.alert.title", comment: ""),
       message: message,
       preferredStyle: .alert
     )
     alert.addAction(UIAlertAction(
       // FIXME: String-based API 😱
-      title: NSLocalizedString("edit.image.alert.save", comment: ""),
+      title: NSLocalizedString("edit.alert.save", comment: ""),
       style: .cancel,
       handler: { [unowned self] _ in
         let newImageMetaData = self.imageMetaDataFromForm()
@@ -135,7 +135,7 @@ extension EditViewController: NavigationPopConfirmation {
     }))
     alert.addAction(UIAlertAction(
       // FIXME: String-based API 😱
-      title: NSLocalizedString("edit.image.alert.dismiss", comment: ""),
+      title: NSLocalizedString("edit.alert.dismiss", comment: ""),
       style: .destructive,
       handler: { _ in performPop() }
     ))
