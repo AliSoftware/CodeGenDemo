@@ -19,6 +19,7 @@
 		095250F01EAB73BB00674705 /* ImageMetaData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 095250EF1EAB73BB00674705 /* ImageMetaData.swift */; };
 		095250F41EAB970500674705 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 095250F31EAB970500674705 /* Main.storyboard */; };
 		095514F51EABE7A1005AAAC6 /* NavigationPopConfirmation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 095514F41EABE7A1005AAAC6 /* NavigationPopConfirmation.swift */; };
+		095514F81EAC08BF005AAAC6 /* UIViewController+Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 095514F71EAC08BF005AAAC6 /* UIViewController+Alert.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +39,7 @@
 		095250EF1EAB73BB00674705 /* ImageMetaData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageMetaData.swift; sourceTree = "<group>"; };
 		095250F31EAB970500674705 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		095514F41EABE7A1005AAAC6 /* NavigationPopConfirmation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationPopConfirmation.swift; sourceTree = "<group>"; };
+		095514F71EAC08BF005AAAC6 /* UIViewController+Alert.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+Alert.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,9 +73,9 @@
 			isa = PBXGroup;
 			children = (
 				0952509A1EA8D64000674705 /* AppDelegate.swift */,
-				095514F61EABE915005AAAC6 /* VewControllers */,
+				095514F61EABE915005AAAC6 /* ViewControllers */,
 				095250EF1EAB73BB00674705 /* ImageMetaData.swift */,
-				095514F41EABE7A1005AAAC6 /* NavigationPopConfirmation.swift */,
+				095514F91EAC10EA005AAAC6 /* Utils */,
 				095250BF1EA8D85500674705 /* Resources */,
 				095250A31EA8D64000674705 /* LaunchScreen.storyboard */,
 				095250A61EA8D64000674705 /* Info.plist */,
@@ -99,7 +101,7 @@
 			path = Fonts;
 			sourceTree = "<group>";
 		};
-		095514F61EABE915005AAAC6 /* VewControllers */ = {
+		095514F61EABE915005AAAC6 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
 				095250F31EAB970500674705 /* Main.storyboard */,
@@ -108,7 +110,16 @@
 				095250E71EA8E12000674705 /* SlideShowViewController.swift */,
 				095250EB1EAB6C9000674705 /* EditViewController.swift */,
 			);
-			name = VewControllers;
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		095514F91EAC10EA005AAAC6 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				095514F41EABE7A1005AAAC6 /* NavigationPopConfirmation.swift */,
+				095514F71EAC08BF005AAAC6 /* UIViewController+Alert.swift */,
+			);
+			name = Utils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -214,6 +225,7 @@
 				0952509B1EA8D64000674705 /* AppDelegate.swift in Sources */,
 				095514F51EABE7A1005AAAC6 /* NavigationPopConfirmation.swift in Sources */,
 				095250E81EA8E12000674705 /* SlideShowViewController.swift in Sources */,
+				095514F81EAC08BF005AAAC6 /* UIViewController+Alert.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
