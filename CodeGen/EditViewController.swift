@@ -28,6 +28,7 @@ class EditViewController: UITableViewController {
 
   var imageMetaData: ImageMetaData?
   var saveMetaData: (ImageMetaData) -> Void = { _ in }
+  private let fieldsCycler = FieldsCycler()
 
   // MARK: Setup
 
@@ -35,6 +36,7 @@ class EditViewController: UITableViewController {
     super.viewDidLoad()
     translateUI()
     fillForm()
+    fieldsCycler.fields = [titleField, authorField, tagsField]
   }
 
   // MARK: IBActions

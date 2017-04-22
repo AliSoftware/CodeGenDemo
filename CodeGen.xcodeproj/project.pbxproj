@@ -20,6 +20,7 @@
 		095250F41EAB970500674705 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 095250F31EAB970500674705 /* Main.storyboard */; };
 		095514F51EABE7A1005AAAC6 /* NavigationPopConfirmation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 095514F41EABE7A1005AAAC6 /* NavigationPopConfirmation.swift */; };
 		095514F81EAC08BF005AAAC6 /* UIViewController+Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 095514F71EAC08BF005AAAC6 /* UIViewController+Alert.swift */; };
+		095514FB1EAC1211005AAAC6 /* FieldsCycler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 095514FA1EAC1211005AAAC6 /* FieldsCycler.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +41,7 @@
 		095250F31EAB970500674705 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		095514F41EABE7A1005AAAC6 /* NavigationPopConfirmation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationPopConfirmation.swift; sourceTree = "<group>"; };
 		095514F71EAC08BF005AAAC6 /* UIViewController+Alert.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+Alert.swift"; sourceTree = "<group>"; };
+		095514FA1EAC1211005AAAC6 /* FieldsCycler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FieldsCycler.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,6 +120,7 @@
 			children = (
 				095514F41EABE7A1005AAAC6 /* NavigationPopConfirmation.swift */,
 				095514F71EAC08BF005AAAC6 /* UIViewController+Alert.swift */,
+				095514FA1EAC1211005AAAC6 /* FieldsCycler.swift */,
 			);
 			name = Utils;
 			sourceTree = "<group>";
@@ -225,6 +228,7 @@
 				0952509B1EA8D64000674705 /* AppDelegate.swift in Sources */,
 				095514F51EABE7A1005AAAC6 /* NavigationPopConfirmation.swift in Sources */,
 				095250E81EA8E12000674705 /* SlideShowViewController.swift in Sources */,
+				095514FB1EAC1211005AAAC6 /* FieldsCycler.swift in Sources */,
 				095514F81EAC08BF005AAAC6 /* UIViewController+Alert.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
