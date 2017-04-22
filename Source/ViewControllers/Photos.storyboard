@@ -14,7 +14,7 @@
         <!--Slide Show View Controller-->
         <scene sceneID="VSw-we-4Cl">
             <objects>
-                <viewController id="F1j-j8-wyR" customClass="SlideShowViewController" customModule="CodeGen" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="F1j-j8-wyR" customClass="SlideShowViewController" customModule="CodeGenDemo" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Nws-ke-Ag0"/>
                         <viewControllerLayoutGuide type="bottom" id="xSJ-rW-0f0"/>
@@ -80,7 +80,7 @@
         <!--Edit Image-->
         <scene sceneID="lCG-Vm-hxa">
             <objects>
-                <tableViewController storyboardIdentifier="EditVC" id="xtm-xl-SJv" customClass="EditViewController" customModule="CodeGen" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController storyboardIdentifier="EditVC" id="xtm-xl-SJv" customClass="EditViewController" customModule="CodeGenDemo" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" sectionIndexMinimumDisplayRowCount="1" rowHeight="88" sectionHeaderHeight="28" sectionFooterHeight="28" id="9CF-tw-8iM">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

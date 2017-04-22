@@ -1,6 +1,6 @@
 /* 
   Localizable.strings
-  CodeGen
+  CodeGenDemo
 
   Created by Olivier Halligon on 20/04/2017.
   Copyright © 2017 AliSoftware. All rights reserved.
@@ -10,58 +10,58 @@
 // MARK: Home screen
 
 /* Welcome message */
-"home.greetings" = "Bienvenue à %1$@, le meetup #%2$d meetup en %3$@!";
+"home.greetings" = "Welcome to %1$@, the #%2$d meetup in %3$@!";
 /* "Slideshow" button */
-"home.slideshow" = "Diaporama";
+"home.slideshow" = "Slideshow";
 
 ///////////////////////////////////////////////////////////////
 // MARK: Slideshow screen buttons
 
 /* "Edit" NavBar button */
-"image.edit" = "Editer";
+"image.edit" = "Edit";
 /* "Close" NavBar button */
-"image.close" = "Fermer";
+"image.close" = "Close";
 
 ///////////////////////////////////////////////////////////////
 // MARK: Edit Screen
 
 /* Edit screen title */
-"edit.screenTitle" = "Edition";
+"edit.screenTitle" = "Edit Image";
 /* Field label for "Title" */
-"edit.fields.title" = "Titre";
+"edit.fields.title" = "Title";
 /* Field label for "Author" */
-"edit.fields.author" = "Auteur";
+"edit.fields.author" = "Author";
 /* Field label for "Date" */
 "edit.fields.date" = "Date";
 /* Field label for "Tags" */
 "edit.fields.tags" = "Tags";
 /* Field label for "Kind" */
-"edit.fields.kind" = "Type";
+"edit.fields.kind" = "Kind";
 
 ///////////////////////////////////////////////////////////////
 // MARK: Edit Alert
 
 /* alert title: "Dismiss changes?" */
-"edit.alert.title" = "Annuler les modifications ?";
+"edit.alert.title" = "Dismiss changes?";
 /* alert message: "Changes have been made to the image « %@ »" */
-"edit.alert.message" = "Les informations sur l'image « %@ » ont été modifiées";
+"edit.alert.message" = "Changes have been made to the image « %@ »";
 /* "Save changes" button title */
-"edit.alert.save" = "Enregistrer";
+"edit.alert.save" = "Save changes";
 /* "Dismiss changes" button title */
-"edit.alert.dismiss" = "Annuler";
+"edit.alert.dismiss" = "Dismiss changes";
 
 ///////////////////////////////////////////////////////////////
 // MARK: Image Kinds
 
 /* Image Kind: unspecified */
-"imagekind.unspecified" = "Non spécifié";
+"imagekind.unspecified" = "Unspecified";
 /* Image Kind: landscape */
-"imagekind.landscape" = "Nature / Paysage";
+"imagekind.landscape" = "Nature/Landscape";
 /* Image Kind: building */
-"imagekind.building" = "Bâtiments";
+"imagekind.building" = "Building";
 /* Image Kind: portrait */
-"imagekind.portrait" = "Visage / Portrait";
+"imagekind.portrait" = "Face/Portrait";
 /* Image Kind: drawing */
-"imagekind.drawing" = "Dessin";
+"imagekind.drawing" = "Drawing";
 /* Image Kind: painting */
-"imagekind.painting" = "Peinture";
+"imagekind.painting" = "Painting";

@@ -1,6 +1,6 @@
 //
 //  UIViewController+Alert.swift
-//  CodeGen
+//  CodeGenDemo
 //
 //  Created by Olivier Halligon on 22/04/2017.
 //  Copyright © 2017 AliSoftware. All rights reserved.

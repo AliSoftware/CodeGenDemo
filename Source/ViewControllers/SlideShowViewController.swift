@@ -1,6 +1,6 @@
 //
 //  SlideShowViewController.swift
-//  CodeGen
+//  CodeGenDemo
 //
 //  Created by Olivier Halligon on 20/04/2017.
 //  Copyright © 2017 AliSoftware. All rights reserved.

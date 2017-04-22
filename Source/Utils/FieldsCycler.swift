@@ -1,6 +1,6 @@
 //
 //  FocusCycler.swift
-//  CodeGen
+//  CodeGenDemo
 //
 //  Created by Olivier Halligon on 23/04/2017.
 //  Copyright © 2017 AliSoftware. All rights reserved.

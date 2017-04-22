@@ -1,6 +1,6 @@
 /* 
   Localizable.strings
-  CodeGen
+  CodeGenDemo
 
   Created by Olivier Halligon on 20/04/2017.
   Copyright © 2017 AliSoftware. All rights reserved.
@@ -10,58 +10,58 @@
 // MARK: Home screen
 
 /* Welcome message */
-"home.greetings" = "Welcome to %1$@, the #%2$d meetup in %3$@!";
+"home.greetings" = "Üdv az %1$@-en, %3$@ #%2$d meetupján!";
 /* "Slideshow" button */
-"home.slideshow" = "Slideshow";
+"home.slideshow" = "Diavetítés";
 
 ///////////////////////////////////////////////////////////////
 // MARK: Slideshow screen buttons
 
 /* "Edit" NavBar button */
-"image.edit" = "Edit";
+"image.edit" = "Szerk.";
 /* "Close" NavBar button */
-"image.close" = "Close";
+"image.close" = "Bezárás";
 
 ///////////////////////////////////////////////////////////////
 // MARK: Edit Screen
 
 /* Edit screen title */
-"edit.screenTitle" = "Edit Image";
+"edit.screenTitle" = "Szerkesztés";
 /* Field label for "Title" */
-"edit.fields.title" = "Title";
+"edit.fields.title" = "Cím";
 /* Field label for "Author" */
-"edit.fields.author" = "Author";
+"edit.fields.author" = "Szerző";
 /* Field label for "Date" */
-"edit.fields.date" = "Date";
+"edit.fields.date" = "Dátum";
 /* Field label for "Tags" */
-"edit.fields.tags" = "Tags";
+"edit.fields.tags" = "Címkék";
 /* Field label for "Kind" */
-"edit.fields.kind" = "Kind";
+"edit.fields.kind" = "Válfaj";
 
 ///////////////////////////////////////////////////////////////
 // MARK: Edit Alert
 
 /* alert title: "Dismiss changes?" */
-"edit.alert.title" = "Dismiss changes?";
+"edit.alert.title" = "Elutasítja a változtatásokat?";
 /* alert message: "Changes have been made to the image « %@ »" */
-"edit.alert.message" = "Changes have been made to the image « %@ »";
+"edit.alert.message" = "Változások történtek a « %@ » képen";
 /* "Save changes" button title */
-"edit.alert.save" = "Save changes";
+"edit.alert.save" = "Változtatások mentése";
 /* "Dismiss changes" button title */
-"edit.alert.dismiss" = "Dismiss changes";
+"edit.alert.dismiss" = "Módosítások törlése";
 
 ///////////////////////////////////////////////////////////////
 // MARK: Image Kinds
 
 /* Image Kind: unspecified */
-"imagekind.unspecified" = "Unspecified";
+"imagekind.unspecified" = "🇭🇺 Unspecified";
 /* Image Kind: landscape */
-"imagekind.landscape" = "Nature/Landscape";
+"imagekind.landscape" = "🇭🇺 Nature/Landscape";
 /* Image Kind: building */
-"imagekind.building" = "Building";
+"imagekind.building" = "🇭🇺 Building";
 /* Image Kind: portrait */
-"imagekind.portrait" = "Face/Portrait";
+"imagekind.portrait" = "🇭🇺 Face/Portrait";
 /* Image Kind: drawing */
-"imagekind.drawing" = "Drawing";
+"imagekind.drawing" = "🇭🇺 Drawing";
 /* Image Kind: painting */
-"imagekind.painting" = "Painting";
+"imagekind.painting" = "🇭🇺 Painting";

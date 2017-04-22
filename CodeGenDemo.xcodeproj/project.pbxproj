@@ -24,7 +24,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		095250971EA8D64000674705 /* CodeGen.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CodeGen.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		095250971EA8D64000674705 /* CodeGenDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CodeGenDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0952509A1EA8D64000674705 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0952509C1EA8D64000674705 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		095250A11EA8D64000674705 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -58,7 +58,7 @@
 		0952508E1EA8D64000674705 = {
 			isa = PBXGroup;
 			children = (
-				095250991EA8D64000674705 /* CodeGen */,
+				095250991EA8D64000674705 /* Source */,
 				095250981EA8D64000674705 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -66,12 +66,12 @@
 		095250981EA8D64000674705 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				095250971EA8D64000674705 /* CodeGen.app */,
+				095250971EA8D64000674705 /* CodeGenDemo.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		095250991EA8D64000674705 /* CodeGen */ = {
+		095250991EA8D64000674705 /* Source */ = {
 			isa = PBXGroup;
 			children = (
 				0952509A1EA8D64000674705 /* AppDelegate.swift */,
@@ -82,7 +82,7 @@
 				095250A31EA8D64000674705 /* LaunchScreen.storyboard */,
 				095250A61EA8D64000674705 /* Info.plist */,
 			);
-			path = CodeGen;
+			path = Source;
 			sourceTree = "<group>";
 		};
 		095250BF1EA8D85500674705 /* Resources */ = {
@@ -128,9 +128,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		095250961EA8D64000674705 /* CodeGen */ = {
+		095250961EA8D64000674705 /* CodeGenDemo */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 095250B41EA8D64000674705 /* Build configuration list for PBXNativeTarget "CodeGen" */;
+			buildConfigurationList = 095250B41EA8D64000674705 /* Build configuration list for PBXNativeTarget "CodeGenDemo" */;
 			buildPhases = (
 				095250F61EABA77F00674705 /* ⚠️ TODOs & FIXMEs */,
 				095250931EA8D64000674705 /* Sources */,
@@ -141,9 +141,9 @@
 			);
 			dependencies = (
 			);
-			name = CodeGen;
+			name = CodeGenDemo;
 			productName = CodeGen;
-			productReference = 095250971EA8D64000674705 /* CodeGen.app */;
+			productReference = 095250971EA8D64000674705 /* CodeGenDemo.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -163,7 +163,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 095250921EA8D64000674705 /* Build configuration list for PBXProject "CodeGen" */;
+			buildConfigurationList = 095250921EA8D64000674705 /* Build configuration list for PBXProject "CodeGenDemo" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -178,7 +178,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				095250961EA8D64000674705 /* CodeGen */,
+				095250961EA8D64000674705 /* CodeGenDemo */,
 			);
 		};
 /* End PBXProject section */
@@ -383,7 +383,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		095250921EA8D64000674705 /* Build configuration list for PBXProject "CodeGen" */ = {
+		095250921EA8D64000674705 /* Build configuration list for PBXProject "CodeGenDemo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				095250B21EA8D64000674705 /* Debug */,
@@ -392,7 +392,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		095250B41EA8D64000674705 /* Build configuration list for PBXNativeTarget "CodeGen" */ = {
+		095250B41EA8D64000674705 /* Build configuration list for PBXNativeTarget "CodeGenDemo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				095250B51EA8D64000674705 /* Debug */,
