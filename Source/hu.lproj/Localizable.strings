@@ -54,14 +54,14 @@
 // MARK: Image Kinds
 
 /* Image Kind: unspecified */
-"imagekind.unspecified" = "🇭🇺 Unspecified";
+"imagekind.unspecified" = "Azonosítatlan";
 /* Image Kind: landscape */
-"imagekind.landscape" = "🇭🇺 Nature/Landscape";
+"imagekind.landscape" = "Tájkép";
 /* Image Kind: building */
-"imagekind.building" = "🇭🇺 Building";
+"imagekind.building" = "Épület";
 /* Image Kind: portrait */
-"imagekind.portrait" = "🇭🇺 Face/Portrait";
+"imagekind.portrait" = "Portré";
 /* Image Kind: drawing */
-"imagekind.drawing" = "🇭🇺 Drawing";
+"imagekind.drawing" = "Rajz";
 /* Image Kind: painting */
-"imagekind.painting" = "🇭🇺 Painting";
+"imagekind.painting" = "Festmény";
