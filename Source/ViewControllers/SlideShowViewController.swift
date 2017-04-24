@@ -36,8 +36,8 @@ class SlideShowViewController: UIViewController {
 
   override func viewDidLoad() {
     super.viewDidLoad()
-    self.navigationItem.leftBarButtonItem?.title = L10n.imageClose
-    self.navigationItem.rightBarButtonItem?.title = L10n.imageEdit
+    self.navigationItem.leftBarButtonItem?.title = tr(.imageClose)
+    self.navigationItem.rightBarButtonItem?.title = tr(.imageEdit)
     self.updateUI()
   }
 

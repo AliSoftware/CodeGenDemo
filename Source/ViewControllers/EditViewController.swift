@@ -48,9 +48,9 @@ class EditViewController: UITableViewController {
   // MARK: Prvate methods
 
   private func translateUI() {
-    self.title = L10n.editScreenTitle
+    self.title = tr(.editScreenTitle)
 
-    let mappings = [
+    let mappings: [UILabel: L10n] = [
       titleLabel: L10n.editFieldsTitle,
       authorLabel: L10n.editFieldsAuthor,
       kindLabel: L10n.editFieldsKind,
@@ -58,8 +58,8 @@ class EditViewController: UITableViewController {
       dateLabel: L10n.editFieldsDate,
     ]
 
-    for (label, string) in mappings {
-      label.text = string
+    for (label, l10n) in mappings {
+      label.text = l10n.string
     }
   }
 
@@ -117,15 +117,13 @@ extension EditViewController: NavigationPopConfirmation {
     // There has been changes, so ask confirmation first
     
     let imageTitle = self.imageMetaData?.title ?? ""
-    let format = L10n.editAlertMessage
-    // FIXME: 🔤 You can use any argument in String(format:) even non-matching ones 😕💣
-    let message = String(format: format, imageTitle)
+    let message = tr(.editAlertMessage(imageTitle))
 
     showAlert(
-      title: L10n.editAlertTitle,
+      title: tr(.editAlertTitle),
       message: message,
-      defaultButton: L10n.editAlertSave,
-      cancelButton: L10n.editAlertDismiss,
+      defaultButton: tr(.editAlertSave),
+      cancelButton: tr(.editAlertDismiss),
       handler: { [unowned self] save in
         if (save) {
           let newImageMetaData = self.imageMetaDataFromForm()
