@@ -53,12 +53,7 @@ class HomeViewController: UIViewController {
   }
 
   @IBAction func presentSlideShow() {
-    // FIXME: 📐 String-based API, will crash if typo 💣
-    let sb = UIStoryboard(name: "Photos", bundle: nil)
-    // FIXME: 📐 Will crash if wrong type 💣
-    guard let vc = sb.instantiateInitialViewController() as? SlideShowViewController else {
-      fatalError("The storyboard's initialVC isn't a SlideShowViewController")
-    }
+    let vc = StoryboardScene.Photos.initialViewController()
     // Ok, Image literals made things a little better, but still not organized as groups and only for Bundle.main
     vc.images = [
       #imageLiteral(resourceName: "photos/Budapest-1"),
