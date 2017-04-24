@@ -48,7 +48,7 @@ class EditViewController: UITableViewController {
   // MARK: Prvate methods
 
   private func translateUI() {
-    // FIXME: String-based API 😱
+    // FIXME: 🔤 String-based API
     self.title = NSLocalizedString("edit.screenTitle", comment: "")
 
     let mappings = [
@@ -60,7 +60,7 @@ class EditViewController: UITableViewController {
     ]
 
     for (label, key) in mappings {
-      // FIXME: String-based API 😱
+      // FIXME: 🔤 String-based API
       label.text = NSLocalizedString(key, comment: "")
     }
   }
@@ -109,7 +109,7 @@ extension EditViewController: UIPickerViewDataSource, UIPickerViewDelegate {
 extension EditViewController: NavigationPopConfirmation {
   func confirmNavigationPop(performPop: @escaping () -> Void) {
     let newMD = self.imageMetaDataFromForm()
-    // FIXME: ⚠️ The real thing we want to do is compare the whole struct with Equatable
+    // FIXME: ⌨️ The real thing we want to do is compare the whole struct with Equatable
     guard newMD.title != self.imageMetaData?.title else {
       // No difference, so allow to pop
       performPop()
@@ -119,12 +119,12 @@ extension EditViewController: NavigationPopConfirmation {
     // There has been changes, so ask confirmation first
     
     let imageTitle = self.imageMetaData?.title ?? ""
-    // FIXME: String-based API 😱
+    // FIXME: 🔤 String-based API
     let format = NSLocalizedString("edit.alert.message", comment: "")
-    // FIXME: 😱 You can use any argument in String(format:) even non-matching ones 😕💣
+    // FIXME: 🔤 You can use any argument in String(format:) even non-matching ones 😕💣
     let message = String(format: format, imageTitle)
 
-    // FIXME: String-based API everywhere 😱
+    // FIXME: 🔤 String-based API everywhere
     showAlert(
       title: NSLocalizedString("edit.alert.title", comment: ""),
       message: message,

@@ -17,7 +17,7 @@ enum ImageKind: String {
   case painting
 
   static var allValues: [ImageKind] {
-    // FIXME: Quite cumbersome to type, and har to maintain! 😱
+    // FIXME: ⌨️ Quite cumbersome to type, and hard to maintain!
     // Look, we even forgot one!
     return [
       .unspecified,
@@ -29,7 +29,7 @@ enum ImageKind: String {
   }
   
   var localizedString: String {
-    // FIXME: String-based API 😱
+    // FIXME: 🔤 String-based API
     return NSLocalizedString("imagekind.\(self.rawValue)", comment: "")
   }
 }

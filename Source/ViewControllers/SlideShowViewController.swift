@@ -36,7 +36,7 @@ class SlideShowViewController: UIViewController {
 
   override func viewDidLoad() {
     super.viewDidLoad()
-    // FIXME: 😱 String-based API, prone to typos
+    // FIXME: 🔤 String-based API, prone to typos
     self.navigationItem.leftBarButtonItem?.title = NSLocalizedString("image.close", comment: "")
     self.navigationItem.rightBarButtonItem?.title = NSLocalizedString("image.edit", comment: "")
     self.updateUI()
@@ -57,7 +57,7 @@ class SlideShowViewController: UIViewController {
   }
 
   @IBAction private func edit() {
-    // FIXME: 😱 String-based API, will crash if typo 💣
+    // FIXME: 📐 String-based API, will crash if typo 💣
     let vc = self.storyboard?.instantiateViewController(withIdentifier: "EditVC")
     guard let editVC = vc as? EditViewController else { return }
     let currentImage = self.images[self.currentIndex]
