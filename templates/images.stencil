@@ -1,0 +1,7 @@
+{% for cat in catalogs %}
+enum {{cat.name}}: String {
+ {% for img in cat.assets %}
+  case {{img.name|swiftIdentifier|snakeToCamelCase|lowerFirstWord}} = "{{img.name}}"
+ {% endfor %}
+}
+{% endfor %}
