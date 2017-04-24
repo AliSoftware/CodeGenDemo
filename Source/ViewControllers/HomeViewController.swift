@@ -42,7 +42,7 @@ class HomeViewController: UIViewController {
     self.titleLabel.font = fonts[currentFontIndex]
 
     // FIXME: 🖼 String-based API, prone to errors
-    self.imageView.image = UIImage(named: "NSBudapest")
+    self.imageView.image = UIImage(asset: .nsBudapest)
 
     // FIXME: 🔤 String-based API, prone to errors
     let btnTitle = NSLocalizedString("home.slideshow", comment: "")
