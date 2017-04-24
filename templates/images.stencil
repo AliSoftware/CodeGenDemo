@@ -1,7 +1,17 @@
+// Auto-Generated, to not EDIT
+
+import UIKit
+
 {% for cat in catalogs %}
 enum {{cat.name}}: String {
  {% for img in cat.assets %}
   case {{img.name|swiftIdentifier|snakeToCamelCase|lowerFirstWord}} = "{{img.name}}"
  {% endfor %}
+}
+
+extension UIImage {
+  convenience init!(asset: {{cat.name}}) {
+    self.init(named: asset.rawValue)
+  }
 }
 {% endfor %}
