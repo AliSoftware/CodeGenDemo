@@ -58,7 +58,7 @@ class SlideShowViewController: UIViewController {
 
   @IBAction private func edit() {
     // FIXME: 📐 String-based API, will crash if typo 💣
-    let vc = self.storyboard?.instantiateViewController(withIdentifier: "EditVC")
+    let vc = self.storyboard?.instantiateViewController(withIdentifier: "Edit")
     guard let editVC = vc as? EditViewController else { return }
     let currentImage = self.images[self.currentIndex]
     editVC.imageMetaData = currentImage.metaData

@@ -49,7 +49,7 @@ class EditViewController: UITableViewController {
 
   private func translateUI() {
     // FIXME: 🔤 String-based API
-    self.title = NSLocalizedString("edit.screenTitle", comment: "")
+    self.title = NSLocalizedString("edit.title", comment: "")
 
     let mappings = [
       titleLabel: "edit.fields.title",
@@ -120,7 +120,7 @@ extension EditViewController: NavigationPopConfirmation {
     
     let imageTitle = self.imageMetaData?.title ?? ""
     // FIXME: 🔤 String-based API
-    let format = NSLocalizedString("edit.alert.message", comment: "")
+    let format = NSLocalizedString("edit.alert.body", comment: "")
     // FIXME: 🔤 You can use any argument in String(format:) even non-matching ones 😕💣
     let message = String(format: format, imageTitle)
 

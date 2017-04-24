@@ -37,15 +37,15 @@ class HomeViewController: UIViewController {
     // FIXME: 🔤 String-based API, prone to errors
     let format = NSLocalizedString("home.greetings", comment: "")
     // FIXME: 🔤 You can use any argument in String(format:) even non-matching ones 😕💣
-    self.titleLabel.text = String(format: format, "NSBudapest", 1, country)
+    self.titleLabel.text = String(format: format, "NSBudapest", country, 1)
 
     self.titleLabel.font = fonts[currentFontIndex]
 
     // FIXME: 🖼 String-based API, prone to errors
-    self.imageView.image = UIImage(named: "NSBudapest")
+    self.imageView.image = UIImage(named: "nsbudapest")
 
     // FIXME: 🔤 String-based API, prone to errors
-    let btnTitle = NSLocalizedString("home.slideshow", comment: "")
+    let btnTitle = NSLocalizedString("home.slides", comment: "")
     self.slideshowButton.setTitle(btnTitle, for: .normal)
 
   }
@@ -60,7 +60,7 @@ class HomeViewController: UIViewController {
 
   @IBAction func presentSlideShow() {
     // FIXME: 📐 String-based API, will crash if typo 💣
-    let sb = UIStoryboard(name: "Photos", bundle: nil)
+    let sb = UIStoryboard(name: "Photo", bundle: nil)
     // FIXME: 📐 Will crash if wrong type 💣
     guard let vc = sb.instantiateInitialViewController() as? SlideShowViewController else {
       fatalError("The storyboard's initialVC isn't a SlideShowViewController")
