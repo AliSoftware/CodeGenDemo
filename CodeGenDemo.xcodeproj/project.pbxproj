@@ -22,6 +22,7 @@
 		095514F81EAC08BF005AAAC6 /* UIViewController+Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 095514F71EAC08BF005AAAC6 /* UIViewController+Alert.swift */; };
 		095514FB1EAC1211005AAAC6 /* FieldsCycler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 095514FA1EAC1211005AAAC6 /* FieldsCycler.swift */; };
 		095515011EAE2373005AAAC6 /* images.swift in Sources */ = {isa = PBXBuildFile; fileRef = 095515001EAE2373005AAAC6 /* images.swift */; };
+		095515031EAE2685005AAAC6 /* strings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 095515021EAE2685005AAAC6 /* strings.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +45,7 @@
 		095514F71EAC08BF005AAAC6 /* UIViewController+Alert.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+Alert.swift"; sourceTree = "<group>"; };
 		095514FA1EAC1211005AAAC6 /* FieldsCycler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FieldsCycler.swift; sourceTree = "<group>"; };
 		095515001EAE2373005AAAC6 /* images.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = images.swift; sourceTree = "<group>"; };
+		095515021EAE2685005AAAC6 /* strings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = strings.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -131,6 +133,7 @@
 		095514FF1EAE2373005AAAC6 /* Generated */ = {
 			isa = PBXGroup;
 			children = (
+				095515021EAE2685005AAAC6 /* strings.swift */,
 				095515001EAE2373005AAAC6 /* images.swift */,
 			);
 			path = Generated;
@@ -241,6 +244,7 @@
 				095250E81EA8E12000674705 /* SlideShowViewController.swift in Sources */,
 				095514FB1EAC1211005AAAC6 /* FieldsCycler.swift in Sources */,
 				095514F81EAC08BF005AAAC6 /* UIViewController+Alert.swift in Sources */,
+				095515031EAE2685005AAAC6 /* strings.swift in Sources */,
 				095515011EAE2373005AAAC6 /* images.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
