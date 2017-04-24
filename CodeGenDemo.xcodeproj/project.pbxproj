@@ -147,6 +147,7 @@
 			buildConfigurationList = 095250B41EA8D64000674705 /* Build configuration list for PBXNativeTarget "CodeGenDemo" */;
 			buildPhases = (
 				095250F61EABA77F00674705 /* ⚠️ TODOs & FIXMEs */,
+				095515041EAE29FA005AAAC6 /* 🛠 SwiftGen */,
 				095250931EA8D64000674705 /* Sources */,
 				095250941EA8D64000674705 /* Frameworks */,
 				095250951EA8D64000674705 /* Resources */,
@@ -227,6 +228,21 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "TAGS=\"TODO:|FIXME:\"\nfind \"${SRCROOT}\" \\( -name \"*.h\" -or -name \"*.m\" -or -name \"*.swift\" \\) -print0 | xargs -0 egrep --with-filename --line-number --only-matching \"($TAGS).*\\$\" | perl -p -e \"s/($TAGS)/ warning: \\$1/\"";
+			showEnvVarsInLog = 0;
+		};
+		095515041EAE29FA005AAAC6 /* 🛠 SwiftGen */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "🛠 SwiftGen";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "swiftgen strings -t swift3 \"${PROJECT_DIR}/Source/Base.lproj/Localizable.strings\" -o \"${PROJECT_DIR}/Source/Generated/strings.swift\"\nswiftgen images -t swift3 \"${PROJECT_DIR}/Source/Assets.xcassets\" -o \"${PROJECT_DIR}/Source/Generated/images.swift\"";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */

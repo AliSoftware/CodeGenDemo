@@ -1,42 +1,111 @@
+// Generated using SwiftGen, by O.Halligon — https://github.com/AliSoftware/SwiftGen
+
+import Foundation
+
+// swiftlint:disable file_length
+// swiftlint:disable line_length
+
+// swiftlint:disable type_body_length
 enum L10n {
-  /// Dismiss changes
-  static let editAlertDismiss = "edit.alert.dismiss"
-  /// Changes have been made to the image « %@ »
-  static let editAlertMessage = "edit.alert.message"
-  /// Save changes
-  static let editAlertSave = "edit.alert.save"
-  /// Dismiss changes?
-  static let editAlertTitle = "edit.alert.title"
-  /// Author
-  static let editFieldsAuthor = "edit.fields.author"
-  /// Date
-  static let editFieldsDate = "edit.fields.date"
-  /// Kind
-  static let editFieldsKind = "edit.fields.kind"
-  /// Tags
-  static let editFieldsTags = "edit.fields.tags"
-  /// Title
-  static let editFieldsTitle = "edit.fields.title"
   /// Edit Image
-  static let editScreenTitle = "edit.screenTitle"
+  case editScreenTitle
+  /// Dismiss changes
+  case editAlertDismiss
+  /// Changes have been made to the image « %@ »
+  case editAlertMessage(String)
+  /// Save changes
+  case editAlertSave
+  /// Dismiss changes?
+  case editAlertTitle
+  /// Author
+  case editFieldsAuthor
+  /// Date
+  case editFieldsDate
+  /// Kind
+  case editFieldsKind
+  /// Tags
+  case editFieldsTags
+  /// Title
+  case editFieldsTitle
   /// Welcome to %1$@, the #%2$d meetup in %3$@!
-  static let homeGreetings = "home.greetings"
+  case homeGreetings(String, Int, String)
   /// Slideshow
-  static let homeSlideshow = "home.slideshow"
+  case homeSlideshow
   /// Close
-  static let imageClose = "image.close"
+  case imageClose
   /// Edit
-  static let imageEdit = "image.edit"
+  case imageEdit
   /// Building
-  static let imagekindBuilding = "imagekind.building"
+  case imagekindBuilding
   /// Drawing
-  static let imagekindDrawing = "imagekind.drawing"
+  case imagekindDrawing
   /// Nature/Landscape
-  static let imagekindLandscape = "imagekind.landscape"
+  case imagekindLandscape
   /// Painting
-  static let imagekindPainting = "imagekind.painting"
+  case imagekindPainting
   /// Face/Portrait
-  static let imagekindPortrait = "imagekind.portrait"
+  case imagekindPortrait
   /// Unspecified
-  static let imagekindUnspecified = "imagekind.unspecified"
+  case imagekindUnspecified
 }
+// swiftlint:enable type_body_length
+
+extension L10n: CustomStringConvertible {
+  var description: String { return self.string }
+
+  var string: String {
+    switch self {
+      case .editScreenTitle:
+        return L10n.tr(key: "edit.screenTitle")
+      case .editAlertDismiss:
+        return L10n.tr(key: "edit.alert.dismiss")
+      case .editAlertMessage(let p1):
+        return L10n.tr(key: "edit.alert.message", p1)
+      case .editAlertSave:
+        return L10n.tr(key: "edit.alert.save")
+      case .editAlertTitle:
+        return L10n.tr(key: "edit.alert.title")
+      case .editFieldsAuthor:
+        return L10n.tr(key: "edit.fields.author")
+      case .editFieldsDate:
+        return L10n.tr(key: "edit.fields.date")
+      case .editFieldsKind:
+        return L10n.tr(key: "edit.fields.kind")
+      case .editFieldsTags:
+        return L10n.tr(key: "edit.fields.tags")
+      case .editFieldsTitle:
+        return L10n.tr(key: "edit.fields.title")
+      case .homeGreetings(let p1, let p2, let p3):
+        return L10n.tr(key: "home.greetings", p1, p2, p3)
+      case .homeSlideshow:
+        return L10n.tr(key: "home.slideshow")
+      case .imageClose:
+        return L10n.tr(key: "image.close")
+      case .imageEdit:
+        return L10n.tr(key: "image.edit")
+      case .imagekindBuilding:
+        return L10n.tr(key: "imagekind.building")
+      case .imagekindDrawing:
+        return L10n.tr(key: "imagekind.drawing")
+      case .imagekindLandscape:
+        return L10n.tr(key: "imagekind.landscape")
+      case .imagekindPainting:
+        return L10n.tr(key: "imagekind.painting")
+      case .imagekindPortrait:
+        return L10n.tr(key: "imagekind.portrait")
+      case .imagekindUnspecified:
+        return L10n.tr(key: "imagekind.unspecified")
+    }
+  }
+
+  private static func tr(key: String, _ args: CVarArg...) -> String {
+    let format = NSLocalizedString(key, bundle: Bundle(for: BundleToken.self), comment: "")
+    return String(format: format, locale: Locale.current, arguments: args)
+  }
+}
+
+func tr(_ key: L10n) -> String {
+  return key.string
+}
+
+private final class BundleToken {}
