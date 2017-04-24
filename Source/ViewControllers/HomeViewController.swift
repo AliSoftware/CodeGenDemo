@@ -19,11 +19,10 @@ class HomeViewController: UIViewController {
   // MARK: Private properties
 
   private let fonts = [
-    // FIXME: 🖋 String-based API, prone to errors
-    "Avenir-Black",
-    "Avenir-Italique",  // FIXME: 🖋 Whoops, wrong postscript name
-    "Avenir-Light",
-    ].map({ UIFont(name: $0, size: 18) })
+    FontFamily.Avenir.black,
+    FontFamily.Avenir.oblique,
+    FontFamily.Avenir.light,
+    ].map({ $0.font(size: 18) })
 
   private lazy var currentFontIndex = 0
 
