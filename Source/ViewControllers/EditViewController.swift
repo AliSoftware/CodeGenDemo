@@ -48,20 +48,18 @@ class EditViewController: UITableViewController {
   // MARK: Prvate methods
 
   private func translateUI() {
-    // FIXME: 🔤 String-based API
-    self.title = NSLocalizedString("edit.screenTitle", comment: "")
+    self.title = L10n.editScreenTitle
 
     let mappings = [
-      titleLabel: "edit.fields.title",
-      authorLabel: "edit.fields.author",
-      kindLabel: "edit.fields.kind",
-      tagsLabel: "edit.fields.tags",
-      dateLabel: "edit.fields.date",
+      titleLabel: L10n.editFieldsTitle,
+      authorLabel: L10n.editFieldsAuthor,
+      kindLabel: L10n.editFieldsKind,
+      tagsLabel: L10n.editFieldsTags,
+      dateLabel: L10n.editFieldsDate,
     ]
 
-    for (label, key) in mappings {
-      // FIXME: 🔤 String-based API
-      label.text = NSLocalizedString(key, comment: "")
+    for (label, string) in mappings {
+      label.text = string
     }
   }
 
@@ -119,17 +117,15 @@ extension EditViewController: NavigationPopConfirmation {
     // There has been changes, so ask confirmation first
     
     let imageTitle = self.imageMetaData?.title ?? ""
-    // FIXME: 🔤 String-based API
-    let format = NSLocalizedString("edit.alert.message", comment: "")
+    let format = L10n.editAlertMessage
     // FIXME: 🔤 You can use any argument in String(format:) even non-matching ones 😕💣
     let message = String(format: format, imageTitle)
 
-    // FIXME: 🔤 String-based API everywhere
     showAlert(
-      title: NSLocalizedString("edit.alert.title", comment: ""),
+      title: L10n.editAlertTitle,
       message: message,
-      defaultButton: NSLocalizedString("edit.alert.save", comment: ""),
-      cancelButton: NSLocalizedString("edit.alert.dismiss", comment: ""),
+      defaultButton: L10n.editAlertSave,
+      cancelButton: L10n.editAlertDismiss,
       handler: { [unowned self] save in
         if (save) {
           let newImageMetaData = self.imageMetaDataFromForm()

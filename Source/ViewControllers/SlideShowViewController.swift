@@ -36,9 +36,8 @@ class SlideShowViewController: UIViewController {
 
   override func viewDidLoad() {
     super.viewDidLoad()
-    // FIXME: 🔤 String-based API, prone to typos
-    self.navigationItem.leftBarButtonItem?.title = NSLocalizedString("image.close", comment: "")
-    self.navigationItem.rightBarButtonItem?.title = NSLocalizedString("image.edit", comment: "")
+    self.navigationItem.leftBarButtonItem?.title = L10n.imageClose
+    self.navigationItem.rightBarButtonItem?.title = L10n.imageEdit
     self.updateUI()
   }
 

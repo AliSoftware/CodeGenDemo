@@ -29,7 +29,6 @@ enum ImageKind: String {
   }
   
   var localizedString: String {
-    // FIXME: 🔤 String-based API
     return NSLocalizedString("imagekind.\(self.rawValue)", comment: "")
   }
 }

@@ -34,18 +34,15 @@ class HomeViewController: UIViewController {
 
     let country = Locale.current.localizedString(forRegionCode: "hu") ?? "Magyarország"
 
-    // FIXME: 🔤 String-based API, prone to errors
-    let format = NSLocalizedString("home.greetings", comment: "")
+    let format = L10n.homeGreetings
     // FIXME: 🔤 You can use any argument in String(format:) even non-matching ones 😕💣
     self.titleLabel.text = String(format: format, "NSBudapest", 1, country)
 
     self.titleLabel.font = fonts[currentFontIndex]
 
-    // FIXME: 🖼 String-based API, prone to errors
     self.imageView.image = UIImage(asset: .nsBudapest)
 
-    // FIXME: 🔤 String-based API, prone to errors
-    let btnTitle = NSLocalizedString("home.slideshow", comment: "")
+    let btnTitle = L10n.homeSlideshow
     self.slideshowButton.setTitle(btnTitle, for: .normal)
 
   }
