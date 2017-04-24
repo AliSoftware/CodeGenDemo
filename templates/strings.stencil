@@ -1,6 +1,6 @@
-enum L10n: String {
+enum L10n {
  {% for string in strings.strings %}
   /// {{string.translation}}
-  case {{string.key|swiftIdentifier|snakeToCamelCase|lowerFirstWord|escapeReservedKeywords}} = "{{string.key}}"
+  static let {{string.key|swiftIdentifier|snakeToCamelCase|lowerFirstWord|escapeReservedKeywords}} = "{{string.key}}"
  {% endfor %}
 }

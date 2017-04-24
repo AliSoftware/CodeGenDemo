@@ -1,42 +1,42 @@
-enum L10n: String {
+enum L10n {
   /// Dismiss changes
-  case editAlertDismiss = "edit.alert.dismiss"
+  static let editAlertDismiss = "edit.alert.dismiss"
   /// Changes have been made to the image « %@ »
-  case editAlertMessage = "edit.alert.message"
+  static let editAlertMessage = "edit.alert.message"
   /// Save changes
-  case editAlertSave = "edit.alert.save"
+  static let editAlertSave = "edit.alert.save"
   /// Dismiss changes?
-  case editAlertTitle = "edit.alert.title"
+  static let editAlertTitle = "edit.alert.title"
   /// Author
-  case editFieldsAuthor = "edit.fields.author"
+  static let editFieldsAuthor = "edit.fields.author"
   /// Date
-  case editFieldsDate = "edit.fields.date"
+  static let editFieldsDate = "edit.fields.date"
   /// Kind
-  case editFieldsKind = "edit.fields.kind"
+  static let editFieldsKind = "edit.fields.kind"
   /// Tags
-  case editFieldsTags = "edit.fields.tags"
+  static let editFieldsTags = "edit.fields.tags"
   /// Title
-  case editFieldsTitle = "edit.fields.title"
+  static let editFieldsTitle = "edit.fields.title"
   /// Edit Image
-  case editScreenTitle = "edit.screenTitle"
+  static let editScreenTitle = "edit.screenTitle"
   /// Welcome to %1$@, the #%2$d meetup in %3$@!
-  case homeGreetings = "home.greetings"
+  static let homeGreetings = "home.greetings"
   /// Slideshow
-  case homeSlideshow = "home.slideshow"
+  static let homeSlideshow = "home.slideshow"
   /// Close
-  case imageClose = "image.close"
+  static let imageClose = "image.close"
   /// Edit
-  case imageEdit = "image.edit"
+  static let imageEdit = "image.edit"
   /// Building
-  case imagekindBuilding = "imagekind.building"
+  static let imagekindBuilding = "imagekind.building"
   /// Drawing
-  case imagekindDrawing = "imagekind.drawing"
+  static let imagekindDrawing = "imagekind.drawing"
   /// Nature/Landscape
-  case imagekindLandscape = "imagekind.landscape"
+  static let imagekindLandscape = "imagekind.landscape"
   /// Painting
-  case imagekindPainting = "imagekind.painting"
+  static let imagekindPainting = "imagekind.painting"
   /// Face/Portrait
-  case imagekindPortrait = "imagekind.portrait"
+  static let imagekindPortrait = "imagekind.portrait"
   /// Unspecified
-  case imagekindUnspecified = "imagekind.unspecified"
+  static let imagekindUnspecified = "imagekind.unspecified"
 }
