@@ -107,8 +107,7 @@ extension EditViewController: UIPickerViewDataSource, UIPickerViewDelegate {
 extension EditViewController: NavigationPopConfirmation {
   func confirmNavigationPop(performPop: @escaping () -> Void) {
     let newMD = self.imageMetaDataFromForm()
-    // FIXME: ⌨️ The real thing we want to do is compare the whole struct with Equatable
-    guard newMD.title != self.imageMetaData?.title else {
+    guard newMD != self.imageMetaData else {
       // No difference, so allow to pop
       performPop()
       return
