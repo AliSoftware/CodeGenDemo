@@ -1,5 +1,5 @@
 sources:
   - "Source"
 templates:
-  - "templates/Enums+AllCases.stencil"
+  - "sourcery/templates/AutoCases.stencil"
 output: "Source/Generated"

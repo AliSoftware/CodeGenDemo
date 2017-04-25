@@ -41,7 +41,7 @@
 		095515251EAE4638005AAAC6 /* Roboto-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 095515151EAE4638005AAAC6 /* Roboto-Thin.ttf */; };
 		095515261EAE4638005AAAC6 /* Roboto-ThinItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 095515161EAE4638005AAAC6 /* Roboto-ThinItalic.ttf */; };
 		095515281EAE4714005AAAC6 /* storyboards.swift in Sources */ = {isa = PBXBuildFile; fileRef = 095515271EAE4714005AAAC6 /* storyboards.swift */; };
-		0955152A1EAF461D005AAAC6 /* Enums+AllCases.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 095515291EAF461D005AAAC6 /* Enums+AllCases.generated.swift */; };
+		0955152C1EAF5312005AAAC6 /* AutoCases.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0955152B1EAF5312005AAAC6 /* AutoCases.generated.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -83,7 +83,7 @@
 		095515151EAE4638005AAAC6 /* Roboto-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Thin.ttf"; sourceTree = "<group>"; };
 		095515161EAE4638005AAAC6 /* Roboto-ThinItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-ThinItalic.ttf"; sourceTree = "<group>"; };
 		095515271EAE4714005AAAC6 /* storyboards.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = storyboards.swift; sourceTree = "<group>"; };
-		095515291EAF461D005AAAC6 /* Enums+AllCases.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Enums+AllCases.generated.swift"; sourceTree = "<group>"; };
+		0955152B1EAF5312005AAAC6 /* AutoCases.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AutoCases.generated.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -187,7 +187,7 @@
 		095514FF1EAE2373005AAAC6 /* Generated */ = {
 			isa = PBXGroup;
 			children = (
-				095515291EAF461D005AAAC6 /* Enums+AllCases.generated.swift */,
+				0955152B1EAF5312005AAAC6 /* AutoCases.generated.swift */,
 				095515271EAE4714005AAAC6 /* storyboards.swift */,
 				095515051EAE4621005AAAC6 /* fonts.swift */,
 				095515021EAE2685005AAAC6 /* strings.swift */,
@@ -328,12 +328,12 @@
 				095250EC1EAB6C9000674705 /* EditViewController.swift in Sources */,
 				095250F01EAB73BB00674705 /* ImageMetaData.swift in Sources */,
 				0952509D1EA8D64000674705 /* HomeViewController.swift in Sources */,
-				0955152A1EAF461D005AAAC6 /* Enums+AllCases.generated.swift in Sources */,
 				0952509B1EA8D64000674705 /* AppDelegate.swift in Sources */,
 				095515281EAE4714005AAAC6 /* storyboards.swift in Sources */,
 				095514F51EABE7A1005AAAC6 /* NavigationPopConfirmation.swift in Sources */,
 				095250E81EA8E12000674705 /* SlideShowViewController.swift in Sources */,
 				095514FB1EAC1211005AAAC6 /* FieldsCycler.swift in Sources */,
+				0955152C1EAF5312005AAAC6 /* AutoCases.generated.swift in Sources */,
 				095514F81EAC08BF005AAAC6 /* UIViewController+Alert.swift in Sources */,
 				095515061EAE4621005AAAC6 /* fonts.swift in Sources */,
 				095515031EAE2685005AAAC6 /* strings.swift in Sources */,
