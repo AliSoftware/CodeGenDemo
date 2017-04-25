@@ -18,18 +18,6 @@ enum ImageKind: String, AutoCases {
   case drawing
   case painting
 
-  static var allValues: [ImageKind] {
-    // FIXME: ⌨️ Quite cumbersome to type, and hard to maintain!
-    // Look, we even forgot one!
-    return [
-      .unspecified,
-      .landscape,
-      .building,
-      .portrait,
-      .drawing,
-    ]
-  }
-  
   var localizedString: String {
     return NSLocalizedString("imagekind.\(self.rawValue)", comment: "")
   }

@@ -71,7 +71,7 @@ class EditViewController: UITableViewController {
     guard let info = self.imageMetaData else { return }
     self.titleField.text = info.title
     self.authorField.text = info.author
-    let row = ImageKind.allValues.index(of: info.kind) ?? 0
+    let row = ImageKind.allCases.index(of: info.kind) ?? 0
     self.kindPicker.selectRow(row, inComponent: 0, animated: false)
     self.tagsField.text = info.tags.joined(separator: " ")
     self.dateField.text = format(date: info.date)
@@ -83,7 +83,7 @@ class EditViewController: UITableViewController {
       author: self.authorField.text ?? "",
       date: self.datePicker.date,
       tags: ImageMetaData.tags(from: self.tagsField.text ?? ""),
-      kind: ImageKind.allValues[self.kindPicker.selectedRow(inComponent: 0)]
+      kind: ImageKind.allCases[self.kindPicker.selectedRow(inComponent: 0)]
     )
   }
 }
@@ -95,10 +95,10 @@ extension EditViewController: UIPickerViewDataSource, UIPickerViewDelegate {
     return 1
   }
   func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
-    return ImageKind.allValues.count
+    return ImageKind.allCases.count
   }
   func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
-    return ImageKind.allValues[row].localizedString
+    return ImageKind.allCases[row].localizedString
   }
 }
 

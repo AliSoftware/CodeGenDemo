@@ -1,7 +1,9 @@
 
-/* AutoCases enums
 {% for enum in types.implementing.AutoCases|enum %}
- - {{enum.name}}
-   -> {{enum.cases}}
+extension {{enum.name}} {
+  static let allCases: [{{enum.name}}] = [
+    {% for case in enum.cases %}.{{case.name}},
+    {% endfor %}
+  ]
+}
 {% endfor %}
-*/

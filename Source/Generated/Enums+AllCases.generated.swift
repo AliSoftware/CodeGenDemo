@@ -2,14 +2,13 @@
 // DO NOT EDIT
 
 
-/* AutoCases enums
- - ImageKind
-   -> (
-    "EnumCase: name = unspecified, rawValue = nil, associatedValues = [], annotations = [:], hasAssociatedValue = false",
-    "EnumCase: name = landscape, rawValue = nil, associatedValues = [], annotations = [:], hasAssociatedValue = false",
-    "EnumCase: name = building, rawValue = nil, associatedValues = [], annotations = [:], hasAssociatedValue = false",
-    "EnumCase: name = portrait, rawValue = nil, associatedValues = [], annotations = [:], hasAssociatedValue = false",
-    "EnumCase: name = drawing, rawValue = nil, associatedValues = [], annotations = [:], hasAssociatedValue = false",
-    "EnumCase: name = painting, rawValue = nil, associatedValues = [], annotations = [:], hasAssociatedValue = false"
-)
-*/
+extension ImageKind {
+  static let allCases: [ImageKind] = [
+    .unspecified,
+    .landscape,
+    .building,
+    .portrait,
+    .drawing,
+    .painting,
+  ]
+}
