@@ -8,8 +8,9 @@
 
 import Foundation
 
-// sourcery: AutoCases
-enum ImageKind: String {
+protocol AutoCases {}
+
+enum ImageKind: String, AutoCases {
   case unspecified
   case landscape
   case building

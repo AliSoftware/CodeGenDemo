@@ -1,6 +1,6 @@
 
 /* AutoCases enums
-{% for enum in types.all|enum|annotated:"AutoCases" %}
+{% for enum in types.implementing.AutoCases|enum %}
  - {{enum.name}}
    -> {{enum.cases}}
 {% endfor %}
