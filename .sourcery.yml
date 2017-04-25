@@ -1,0 +1,5 @@
+sources:
+  - "Source"
+templates:
+  - "templates/Enums+AllCases.stencil"
+output: "Source/Generated"

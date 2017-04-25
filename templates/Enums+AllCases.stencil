@@ -1,0 +1,11 @@
+/* All Types
+{% for type in types.all %}
+ - {{type.name}}...		
+{% endfor %}
+*/
+
+/* enums
+{% for enum in types.all|enum %}
+ - {{enum.name}}
+{% endfor %}
+*/
