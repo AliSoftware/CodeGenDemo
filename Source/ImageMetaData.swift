@@ -8,6 +8,7 @@
 
 import Foundation
 
+// sourcery: AutoCases
 enum ImageKind: String {
   case unspecified
   case landscape

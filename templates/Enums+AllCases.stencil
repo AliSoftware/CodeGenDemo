@@ -1,11 +1,7 @@
-/* All Types
-{% for type in types.all %}
- - {{type.name}}...		
-{% endfor %}
-*/
 
-/* enums
-{% for enum in types.all|enum %}
+/* AutoCases enums
+{% for enum in types.all|enum|annotated:"AutoCases" %}
  - {{enum.name}}
+   -> {{enum.cases}}
 {% endfor %}
 */
