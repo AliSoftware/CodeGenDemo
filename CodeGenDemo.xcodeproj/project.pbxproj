@@ -322,7 +322,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "SRC=\"${PROJECT_DIR}/Source\"\nGEN=\"${PROJECT_DIR}/Source/Generated\"\n\nswiftgen strings -t swift3 \"$SRC/Base.lproj/Localizable.strings\" -o \"$GEN/strings.swift\"\nswiftgen images -t swift3 \"$SRC/Assets.xcassets\" -o \"$GEN/images.swift\"\nswiftgen fonts -t swift3 \"$SRC/Fonts\" -o \"$GEN/fonts.swift\"\nswiftgen storyboards -t swift3 \"$SRC\" -o \"$GEN/storyboards.swift\"";
+			shellScript = "if which swiftlint >/dev/null; then\n  SRC=\"${PROJECT_DIR}/Source\"\n  GEN=\"${PROJECT_DIR}/Source/Generated\"\n\n  swiftgen strings -t swift3 \"$SRC/Base.lproj/Localizable.strings\" -o \"$GEN/strings.swift\"\n  swiftgen images -t swift3 \"$SRC/Assets.xcassets\" -o \"$GEN/images.swift\"\n  swiftgen fonts -t swift3 \"$SRC/Fonts\" -o \"$GEN/fonts.swift\"\n  swiftgen storyboards -t swift3 \"$SRC\" -o \"$GEN/storyboards.swift\"\nelse\n  echo \"warning: SwiftGen not installed, download from https://github.com/SwiftGen/SwiftGen\"\nfi";
 			showEnvVarsInLog = 0;
 		};
 		0955152D1EAF5E95005AAAC6 /* 🛠 Sourcery */ = {
