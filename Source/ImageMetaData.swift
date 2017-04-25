@@ -8,7 +8,6 @@
 
 import Foundation
 
-protocol AutoCases {}
 
 enum ImageKind: String, AutoCases {
   case unspecified
@@ -23,7 +22,7 @@ enum ImageKind: String, AutoCases {
   }
 }
 
-struct ImageMetaData {
+struct ImageMetaData: AutoEquatable {
   let title: String
   let author: String
   let date: Date

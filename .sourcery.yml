@@ -2,4 +2,5 @@ sources:
   - "Source"
 templates:
   - "sourcery/templates/AutoCases.stencil"
+  - "sourcery/templates/AutoEquatable.stencil"
 output: "Source/Generated"
