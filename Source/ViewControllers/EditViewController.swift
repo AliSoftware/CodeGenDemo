@@ -75,6 +75,7 @@ class EditViewController: UITableViewController {
     self.kindPicker.selectRow(row, inComponent: 0, animated: false)
     self.tagsField.text = info.tags.joined(separator: " ")
     self.dateField.text = format(date: info.date)
+    self.datePicker.date = info.date
   }
 
   fileprivate func imageMetaDataFromForm() -> ImageMetaData {
