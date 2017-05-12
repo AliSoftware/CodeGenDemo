@@ -44,6 +44,7 @@
 		0955152C1EAF5312005AAAC6 /* AutoCases.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0955152B1EAF5312005AAAC6 /* AutoCases.generated.swift */; };
 		0955152F1EAF5F9E005AAAC6 /* SourceryProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0955152E1EAF5F9E005AAAC6 /* SourceryProtocols.swift */; };
 		095515311EAF6010005AAAC6 /* AutoEquatable.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 095515301EAF6010005AAAC6 /* AutoEquatable.generated.swift */; };
+		37944B201EC60AD0002C0115 /* Pokemon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37944B1F1EC60AD0002C0115 /* Pokemon.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -88,6 +89,7 @@
 		0955152B1EAF5312005AAAC6 /* AutoCases.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AutoCases.generated.swift; sourceTree = "<group>"; };
 		0955152E1EAF5F9E005AAAC6 /* SourceryProtocols.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SourceryProtocols.swift; sourceTree = "<group>"; };
 		095515301EAF6010005AAAC6 /* AutoEquatable.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AutoEquatable.generated.swift; sourceTree = "<group>"; };
+		37944B1F1EC60AD0002C0115 /* Pokemon.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Pokemon.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -124,6 +126,7 @@
 				0952509A1EA8D64000674705 /* AppDelegate.swift */,
 				095514F61EABE915005AAAC6 /* ViewControllers */,
 				095250EF1EAB73BB00674705 /* ImageMetaData.swift */,
+				37944B1F1EC60AD0002C0115 /* Pokemon.swift */,
 				095514F91EAC10EA005AAAC6 /* Utils */,
 				095250BF1EA8D85500674705 /* Resources */,
 				095250A31EA8D64000674705 /* LaunchScreen.storyboard */,
@@ -348,6 +351,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				095515311EAF6010005AAAC6 /* AutoEquatable.generated.swift in Sources */,
+				37944B201EC60AD0002C0115 /* Pokemon.swift in Sources */,
 				095250EC1EAB6C9000674705 /* EditViewController.swift in Sources */,
 				095250F01EAB73BB00674705 /* ImageMetaData.swift in Sources */,
 				0952509D1EA8D64000674705 /* HomeViewController.swift in Sources */,

@@ -1,4 +1,4 @@
-// Generated using SwiftGen, by O.Halligon — https://github.com/AliSoftware/SwiftGen
+// Generated using SwiftGen, by O.Halligon — https://github.com/SwiftGen/SwiftGen
 
 #if os(iOS) || os(tvOS) || os(watchOS)
   import UIKit.UIFont
@@ -10,6 +10,7 @@
 
 // swiftlint:disable file_length
 // swiftlint:disable line_length
+// swiftlint:disable conditional_returns_on_newline
 
 protocol FontConvertible {
   func font(size: CGFloat) -> Font!
