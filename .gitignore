@@ -5,7 +5,6 @@
 ## Build generated
 build/
 DerivedData/
-Fixtures/stub-env/**/*.swiftmodule
 
 ## Various settings
 *.pbxuser
@@ -69,6 +68,3 @@ fastlane/test_output
 .apitoken
 .DS_Store
 .idea/
-bin/
-Frameworks/
-Rome/
