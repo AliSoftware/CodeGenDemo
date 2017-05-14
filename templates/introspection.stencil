@@ -3,3 +3,4 @@ There are {{types.all.count}} types in this code, including:
  - {{types.structs.count}} structs
  - {{types.classes.count}} classes
  
+ {{types.structs}}

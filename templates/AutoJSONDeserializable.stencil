@@ -1,0 +1,19 @@
+{% for type in types.implementing.AutoJSONDeserializable %}
+
+extension {{ type.name }}: JSONDeserializable {
+  init?(json: [String: Any]) {
+    {% for prop in type.storedVariables %}
+    {% if prop.type.implements.AutoJSONDeserializable %}
+      self.{{ prop.name }} = (json["{{prop.name}}"] as? [String: Any])
+        .flatMap({{ prop.unwrappedTypeName }}.init(json:))
+    {% else %}{% if prop.unwrappedTypeName == "Date" %}
+      self.{{ prop.name }} = (json["{{prop.name}}"] as? String)
+        .flatMap(JSONDateFormatter.date(from:))
+    {% else %}
+      self.{{ prop.name }} = json["{{prop.name}}"] as? {{ prop.unwrappedTypeName }}
+    {% endif %}{% endif %}
+    {% endfor %}
+  }
+}
+
+{% endfor %}

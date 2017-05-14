@@ -42,3 +42,18 @@ extension ImageMetaData {
     self.init(title: "", author: "", date: Date(), tags: [], kind: .unspecified)
   }
 }
+
+struct Avatar: AutoJSONDeserializable {
+  // sourcery: JSONKey = "url"
+  let imageURL: String
+}
+struct Contact: AutoJSONDeserializable {
+  let id: String
+  // sourcery: JSONKey = "first_name"
+  let firstName: String
+  // sourcery: JSONKey = "last_name"
+  let lastName: String
+  // sourcery: JSONKey = "dob"
+  let dateOfBirth: Date
+  let avatar: Avatar
+}

@@ -9,7 +9,7 @@
 class Thunder { }
 class Fire { }
 
-// sourcery: typeerase = PokemonType
+// sourcery: TypeErase = PokemonType
 protocol Pokemon {
   associatedtype PokemonType
   func attack(move: PokemonType)
@@ -27,36 +27,6 @@ class Charmander: Pokemon {
 class Raichu: Pokemon {
   typealias PokemonType = Thunder
   func attack(move: Thunder) { /*⚡️*/ }
-}
-
-/*
-class AnyPokemon<Base>: Pokemon {
-  typealias PokemonType = Base
-
-  private let _attack: ((Base) -> Void)
-
-  required init<U:Pokemon>(_ pokemon: U) where U.PokemonType == Base {
-    _attack = pokemon.attack
-  }
-
-  func attack(move type: Base) {
-    return _attack(type)
-  }
-}
-*/
-
-class AnyPokemon<Base>: Pokemon {
-  typealias PokemonType = Base
-
-  private let _attack: ((PokemonType) -> Void)
-
-  required init<T: Pokemon>(_ base: T) where T.PokemonType == Base {
-    _attack = base.attack
-  }
-
-  func attack(move: PokemonType) {
-    return _attack(move)
-  }
 }
 
 func test() {

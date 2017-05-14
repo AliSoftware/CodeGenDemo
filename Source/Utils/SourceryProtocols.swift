@@ -14,3 +14,6 @@ protocol AutoCases {}
 
 /// Conform your types to this marker protocol to make Sourcery generate `Equatable` implementations for you
 protocol AutoEquatable {}
+
+protocol AutoJSONDeserializable {}
+

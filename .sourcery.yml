@@ -3,4 +3,7 @@ sources:
 templates:
   - "sourcery/templates/AutoCases.stencil"
   - "sourcery/templates/AutoEquatable.stencil"
+  - "templates/Introspection.stencil"
+  - "templates/AutoJSONDeserializable.stencil"
+  - "templates/TypeErase.stencil"
 output: "Source/Generated"
